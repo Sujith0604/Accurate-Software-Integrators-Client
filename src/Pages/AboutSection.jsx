@@ -563,7 +563,9 @@ const OverlayCopy = ({ subheading, heading }) => {
       className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
     >
       <p className="mb-2 text-center text-xl md:mb-4 ">{subheading}</p>
-      <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
+      <p className="text-center text-4xl font-bold md:text-7xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent ">
+        {heading}
+      </p>
     </motion.div>
   );
 };

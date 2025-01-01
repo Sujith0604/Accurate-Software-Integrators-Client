@@ -170,18 +170,36 @@ const ClipPathLinks = () => {
     <div className="divide-y divide-neutral-900 border border-neutral-900">
       <div className="grid grid-cols-2 divide-x divide-neutral-900">
         <LinkBox Icon={SiGoogle} href="#" />
-        <LinkBox Icon={FaWhatsapp} href="#" />
+        <LinkBox
+          Icon={FaWhatsapp}
+          href="whatsapp://send?text=Hello There!&phone=+918870895978"
+        />
       </div>
       <div className="grid grid-cols-4 divide-x divide-neutral-900">
         <LinkBox Icon={FaGithub} href="#" />
-        <LinkBox Icon={FaMailBulk} href="#" />
-        <LinkBox Icon={FaInstagram} href="#" />
-        <LinkBox Icon={SiFacebook} href="#" />
+        <LinkBox
+          Icon={FaMailBulk}
+          href="mailto:accuratesoftwareintegrators@gmail.com"
+        />
+        <LinkBox
+          Icon={FaInstagram}
+          href="https://www.instagram.com/accurate_software_/profilecard/?igsh=MWxraGF4NXI3NnFqYg=="
+        />
+        <LinkBox
+          Icon={SiFacebook}
+          href="https://www.facebook.com/share/15VNuw4sKG/?mibextid=wwXIfr"
+        />
       </div>
       <div className="grid grid-cols-3 divide-x divide-neutral-900">
-        <LinkBox Icon={FaXTwitter} href="#" />
-        <LinkBox Icon={IoIosCall} href="#" />
-        <LinkBox Icon={SiLinkedin} href="#" />
+        <LinkBox
+          Icon={FaXTwitter}
+          href="https://x.com/webdev_2025?t=ntv7hLUTFN40QoSP0FCqNg&s=08"
+        />
+        <LinkBox Icon={IoIosCall} href="tel:8870895978" />
+        <LinkBox
+          Icon={SiLinkedin}
+          href="http://linkedin.com/in/accurate-software-integrators-ab02b1344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        />
       </div>
     </div>
   );

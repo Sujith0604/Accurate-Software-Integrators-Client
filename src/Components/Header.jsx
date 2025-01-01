@@ -45,9 +45,9 @@ const Header = () => {
           <li className=" hover:underline">
             <AnchorLink href="#design">Design</AnchorLink>
           </li>
-          <li className=" hover:underline">
+          {/* <li className=" hover:underline">
             <AnchorLink href="#project">Projects</AnchorLink>
-          </li>
+          </li> */}
           <li className=" hover:underline">
             <AnchorLink href="#contact">Contact</AnchorLink>
           </li>
@@ -170,9 +170,9 @@ const Header = () => {
           <li className=" hover:underline">
             <AnchorLink href="#design">Design</AnchorLink>
           </li>
-          <li className=" hover:underline">
+          {/* <li className=" hover:underline">
             <AnchorLink href="#project">Projects</AnchorLink>
-          </li>
+          </li> */}
           <li className=" hover:underline">
             <AnchorLink href="#contact">Contact</AnchorLink>
           </li>

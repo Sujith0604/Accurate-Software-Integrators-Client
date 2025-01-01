@@ -23,8 +23,8 @@ const ModalComponent = ({
 
         <p>{content}</p>
         <p className="mt-4 text-xl font-semibold">{subtitle}</p>
-        <p>{start}</p>
-        <p className=" hidden md:flex">{challenge}</p>
+        <p className=" text-[16px]">{start}</p>
+        <p className=" text-[16px] hidden md:flex">{challenge}</p>
       </div>
     </div>
   );

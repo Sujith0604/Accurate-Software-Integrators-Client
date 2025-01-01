@@ -48,7 +48,7 @@ const DeveloperSection = () => {
                 transition={{ type: "spring", delay: 0.5 }}
                 role="list"
                 aria-label="Behind the scenes People "
-                className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around  sm:justify-around lg:justify-around"
+                className="lg:flex md:flex sm:flex items-center gap-5 xl:justify-between flex-wrap md:justify-around  sm:justify-around lg:justify-around"
               >
                 {developerContent?.map((developer) => (
                   <div

@@ -1,8 +1,7 @@
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import MailRoundedIcon from "@mui/icons-material/MailRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { useEffect, useState } from "react";
-import { motion } from "motion/react";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { pageContext } from "../Context/PageContext";
 import { useContext } from "react";
 import Loader from "../Components/Loader";
@@ -77,24 +76,39 @@ const Pricing = () => {
       ></motion.div> */}
 
               <p
-                className=" text-sm text-center"
+                className=" text-sm text-center text-gray-500"
                 dangerouslySetInnerHTML={{
                   __html: price.content,
                 }}
               ></p>
               <div
                 className=" flex gap-5
-           items-center text-gray-500"
+           items-center"
               >
-                <span>
+                <a
+                  aria-label="facebook"
+                  href="https://www.facebook.com/share/15VNuw4sKG/?mibextid=wwXIfr"
+                >
                   <FacebookRoundedIcon />
-                </span>
-                <span>
+                </a>
+                <a
+                  aria-label="instagram"
+                  href="https://www.instagram.com/accurate_software_/profilecard/?igsh=MWxraGF4NXI3NnFqYg=="
+                >
                   <InstagramIcon />
-                </span>
-                <span>
+                </a>
+                <a
+                  aria-label="mail"
+                  href="mailto:accuratesoftwareintegrators@gmail.com"
+                >
                   <MailRoundedIcon />
-                </span>
+                </a>
+                <a
+                  aria-label="whatsapp"
+                  href="whatsapp://send?text=Hello There!&phone=+918870895978"
+                >
+                  <WhatsAppIcon />
+                </a>
               </div>
             </div>
           )

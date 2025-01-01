@@ -21,14 +21,12 @@ const Herosection = () => {
         <motion.div
           initial={{
             opacity: 0,
-            scale: 0,
           }}
           animate={{
             opacity: 1,
-            scale: 1,
           }}
           transition={{
-            type: "spring",
+            type: "fade",
             stiffness: 100,
             damping: 10,
             delay: 3.2,
@@ -75,14 +73,12 @@ const Herosection = () => {
                 className=" text-center text-[17px]"
                 initial={{
                   opacity: 0,
-                  scale: 0,
                 }}
                 animate={{
                   opacity: 1,
-                  scale: 1,
                 }}
                 transition={{
-                  type: "spring",
+                  type: "fade",
                   stiffness: 100,
                   damping: 10,
                   delay: 3.2,

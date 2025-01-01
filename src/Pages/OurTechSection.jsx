@@ -18,7 +18,7 @@ const OurTechSection = () => {
               key={page._id}
               className=" flex flex-col gap-5  items-center w-full   h-full justify-center"
             >
-              <h2 className=" md:text-5xl text-3xl font-bold text-center md:text-start">
+              <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  font-bold text-center md:text-start">
                 {page.title}
               </h2>
               <p className=" text-gray-500 text-center ">{page.subTitle}</p>
@@ -57,7 +57,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
+    <section ref={targetRef} className="relative h-[300vh] bg-black">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {techContent?.map((tech) => {
@@ -75,7 +75,7 @@ const Card = ({ title, key, image }) => {
   return (
     <div
       key={key}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-black rounded-3xl"
+      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-900 rounded-3xl"
     >
       <div
         style={{
@@ -87,7 +87,7 @@ const Card = ({ title, key, image }) => {
       ></div>
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 ">
         <img
-          className=" h-[70px] w-[70px]"
+          className=" h-[70px] w-[70px] bg-white rounded-3xl"
           src={`http://localhost:3000/${image}`}
         />
         <p className=" p-8 text-4xl  uppercase text-white ">{title}</p>
@@ -96,42 +96,24 @@ const Card = ({ title, key, image }) => {
   );
 };
 
-export default OurTechSection;
+// const Card = ({ title, key, image }) => {
+//   return (
+//     <article
+//       key={key}
+//       className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 "
+//     >
+//       <img
+//         src={`http://localhost:3000/${image}`}
+//         alt="University of Southern California"
+//         className="absolute inset-0 h-full w-full object-cover"
+//       />
+//       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+//       <h3 className="z-10 mt-3 text-3xl font-bold text-white">{title}</h3>
+//       {/* <div className="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+//         City of love
+//       </div> */}
+//     </article>
+//   );
+// };
 
-const cards = [
-  {
-    url: "/imgs/abstract/1.jpg",
-    title: "Title 1",
-    id: 1,
-  },
-  {
-    url: "/imgs/abstract/2.jpg",
-    title: "Title 2",
-    id: 2,
-  },
-  {
-    url: "/imgs/abstract/3.jpg",
-    title: "Title 3",
-    id: 3,
-  },
-  {
-    url: "/imgs/abstract/4.jpg",
-    title: "Title 4",
-    id: 4,
-  },
-  {
-    url: "/imgs/abstract/5.jpg",
-    title: "Title 5",
-    id: 5,
-  },
-  {
-    url: "/imgs/abstract/6.jpg",
-    title: "Title 6",
-    id: 6,
-  },
-  {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 7",
-    id: 7,
-  },
-];
+export default OurTechSection;

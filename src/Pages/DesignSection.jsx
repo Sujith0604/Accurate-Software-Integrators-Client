@@ -152,34 +152,37 @@ const Schedule = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-20 text-4xl font-black uppercase text-zinc-50"
       >
-        Our Companies Worksection
+        Our Work phase
       </motion.h1>
       <ScheduleItem
-        title="Frontend Website Development"
-        date="Jan 1 2025"
+        title="Consult your idea"
+        date="Phase - 1"
         location="Coimbatore"
       />
       <ScheduleItem
-        title="Backend Development"
-        date="Jan 1 2025"
+        title="Requirement Gathering"
+        date="Phase - 2"
         location="Coimbatore"
       />
       <ScheduleItem
-        title="Website Designing"
-        date="Jan 1 2025"
+        title="Choose a technology"
+        date="Phase - 3"
         location="Coimbatore"
       />
+      <ScheduleItem title="Design" date="Phase - 3" location="Coimbatore" />
       <ScheduleItem
-        title="Logo Designing"
-        date="Jan 1 2025"
+        title="Developement"
+        date="Phase - 4"
         location="Coimbatore"
       />
+      <ScheduleItem title="Testing" date="Phase - 5" location="Coimbatore" />
+      <ScheduleItem title="Hosting" date="Phase - 6" location="Coimbatore" />
+      <ScheduleItem title="Deploying " date="Phase - 7" location="Coimbatore" />
       <ScheduleItem
-        title="Social Media Handling"
-        date="Jan 1 2025"
+        title="Reach the market"
+        date="Phase - 8"
         location="Coimbatore"
       />
-      <ScheduleItem title="Hosting" date="Jan 1 2025" location="Coimbatore" />
     </section>
   );
 };

@@ -1,10 +1,12 @@
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import { AboutSection } from "./Pages/AboutSection";
+import { CompanyName } from "./Pages/CompanyName";
 import { ContactSection } from "./Pages/ContactSection";
 import { DesignSection } from "./Pages/DesignSection";
 import DeveloperSection from "./Pages/DeveloperSection";
 import Herosection from "./Pages/Herosection";
+import OurDeveloper from "./Pages/OurDeveloper";
 import OurTechSection from "./Pages/OurTechSection";
 import Pricing from "./Pages/Pricing";
 import ProjectSection from "./Pages/ProjectSection";
@@ -19,13 +21,16 @@ const AppLayout = () => {
       <main className="flex flex-col gap-5">
         <Herosection />
         <AboutSection />
+        <CompanyName />
         <Pricing />
         <OurTechSection />
         <ServiceSection />
-        <DeveloperSection />
+        <DesignSection />
+        {/* <DeveloperSection /> */}
+        <OurDeveloper />
         <WhyCooseUs />
         {/* <ProjectSection /> */}
-        <DesignSection />
+
         {/* <TestimonySection /> */}
         <ContactSection />
       </main>

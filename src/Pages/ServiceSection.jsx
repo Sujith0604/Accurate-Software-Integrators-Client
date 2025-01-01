@@ -20,21 +20,21 @@ const ServiceSection = () => {
               <div key={page._id} className="flex flex-wrap -mx-4">
                 <div className="w-full px-4">
                   <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
-                    <span className=" text-xl font-bold">{page.title}</span>
+                    <span className=" text-xl font-bold ">{page.title}</span>
                     <h2
                       className="
                     font-bold
                     text-3xl
                     sm:text-4xl
                     md:text-[40px]
-                   text-white
+                  
                     mb-4
                     bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600  bg-clip-text text-transparent"
                     >
                       {page.subTitle}
                     </h2>
                     <p
-                      className=" text-white"
+                      className=" text-gray-500"
                       dangerouslySetInnerHTML={{
                         __html: page.content,
                       }}
