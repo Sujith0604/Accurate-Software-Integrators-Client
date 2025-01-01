@@ -100,7 +100,7 @@ const Header = () => {
           {" "}
           <img
             src="/images/LogoWithBackground-removebg-preview.png"
-            className=" h-[50px] "
+            className=" h-[80px] "
           />
         </AnchorLink>
       </motion.div>

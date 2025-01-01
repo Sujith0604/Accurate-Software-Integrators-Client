@@ -16,7 +16,7 @@ import WhyCooseUs from "./Pages/WhyCooseUs";
 
 const AppLayout = () => {
   return (
-    <div className=" flex flex-col  scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 font-all">
+    <div className=" flex flex-col  scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 ">
       <Header />
       <main className="flex flex-col gap-5">
         <Herosection />

@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 export const CompanyName = () => {
   return (
     <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950">
-      <h2 className="relative z-0 text-[20vw] font-black bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  md:text-[200px]">
+      <h2 className="relative z-0 text-[20vw] font-all bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  md:text-[200px]">
         ASI<span>.</span>
       </h2>
       <Cards />

@@ -169,14 +169,14 @@ const Schedule = () => {
         date="Phase - 3"
         location="Coimbatore"
       />
-      <ScheduleItem title="Design" date="Phase - 3" location="Coimbatore" />
+      <ScheduleItem title="Design" date="Phase - 4" location="Coimbatore" />
       <ScheduleItem
         title="Developement"
-        date="Phase - 4"
+        date="Phase - 5"
         location="Coimbatore"
       />
-      <ScheduleItem title="Testing" date="Phase - 5" location="Coimbatore" />
-      <ScheduleItem title="Hosting" date="Phase - 6" location="Coimbatore" />
+      <ScheduleItem title="Testing" date="Phase - 6" location="Coimbatore" />
+
       <ScheduleItem title="Deploying " date="Phase - 7" location="Coimbatore" />
       <ScheduleItem
         title="Reach the market"
