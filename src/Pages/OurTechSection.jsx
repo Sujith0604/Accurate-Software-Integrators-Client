@@ -10,7 +10,7 @@ const OurTechSection = () => {
   if (loading) return <Loader />;
 
   return (
-    <div className="">
+    <div id="skills" className="">
       {pagesContent?.map(
         (page) =>
           page.title === "What tech we use?" && (

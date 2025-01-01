@@ -42,7 +42,7 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li className=" hover:underline">
-                  <AnchorLink href="#home">Home</AnchorLink>
+                  <AnchorLink href="#hero">Home</AnchorLink>
                 </li>
 
                 <li className=" hover:underline">

@@ -14,7 +14,7 @@ const OurDeveloper = () => {
   if (loading) return <Loader />;
 
   return (
-    <div className="">
+    <div id="developer" className="">
       {pagesContent?.map(
         (page) =>
           page.title === "BUILDING TEAM" && (
