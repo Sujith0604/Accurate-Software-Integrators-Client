@@ -86,7 +86,7 @@ const Header = () => {
   };
 
   return (
-    <header className=" h-[100px] p-4 bg-transparent  flex items-center justify-between fixed w-full z-50 bg-black bg-opacity-40 backdrop-blur-lg">
+    <header className=" md:h-[100px] h-[60px] p-4 bg-transparent  flex items-center justify-between fixed w-full z-50 bg-black bg-opacity-40 backdrop-blur-lg">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{
@@ -100,7 +100,7 @@ const Header = () => {
           {" "}
           <img
             src="/images/LogoWithBackground-removebg-preview.png"
-            className=" h-[80px] "
+            className=" md:h-[80px] h-[50px] "
           />
         </AnchorLink>
       </motion.div>
