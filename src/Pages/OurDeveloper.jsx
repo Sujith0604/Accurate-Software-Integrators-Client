@@ -6,7 +6,6 @@ import { pageContext } from "../Context/PageContext";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import MailRoundedIcon from "@mui/icons-material/MailRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const OurDeveloper = () => {
@@ -89,7 +88,7 @@ const Card = ({ developer }) => {
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "linear" }}
-            src={`http://localhost:3000/${developer.image} `}
+            src={`https://accurate-software-integrators-backend.onrender.com/${developer.image} `}
             alt="Display Picture of Andres Berlin"
             role="img"
             loading="lazy"
