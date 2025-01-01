@@ -12,7 +12,7 @@ export const ContactSection = () => {
         <h1 className=" text-center text-2xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600  bg-clip-text text-transparent ">
           CONTACT US
         </h1>
-
+        {/* 
         <div className="font-[sans-serif] max-w-6xl max-lg:max-w-3xl mx-auto p-4">
           <div className=" rounded p-8">
             <div className="grid lg:grid-cols-2 items-start gap-12">
@@ -156,7 +156,7 @@ export const ContactSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <div className="mx-auto max-w-7xl">
         <ClipPathLinks />

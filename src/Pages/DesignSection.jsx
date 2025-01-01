@@ -152,15 +152,34 @@ const Schedule = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-20 text-4xl font-black uppercase text-zinc-50"
       >
-        Our Designs
+        Our Companies Worksection
       </motion.h1>
-      <ScheduleItem title="Turf" date="Dec 9th" location="Florida" />
-      <ScheduleItem title="Starlink" date="Dec 20th" location="Texas" />
-      <ScheduleItem title="Starlink" date="Jan 13th" location="Florida" />
-      <ScheduleItem title="Turksat 6A" date="Feb 22nd" location="Florida" />
-      <ScheduleItem title="NROL-186" date="Mar 1st" location="California" />
-      <ScheduleItem title="GOES-U" date="Mar 8th" location="California" />
-      <ScheduleItem title="ASTRA 1P" date="Apr 8th" location="Texas" />
+      <ScheduleItem
+        title="Frontend Website Development"
+        date="Jan 1 2025"
+        location="Coimbatore"
+      />
+      <ScheduleItem
+        title="Backend Development"
+        date="Jan 1 2025"
+        location="Coimbatore"
+      />
+      <ScheduleItem
+        title="Website Designing"
+        date="Jan 1 2025"
+        location="Coimbatore"
+      />
+      <ScheduleItem
+        title="Logo Designing"
+        date="Jan 1 2025"
+        location="Coimbatore"
+      />
+      <ScheduleItem
+        title="Social Media Handling"
+        date="Jan 1 2025"
+        location="Coimbatore"
+      />
+      <ScheduleItem title="Hosting" date="Jan 1 2025" location="Coimbatore" />
     </section>
   );
 };
