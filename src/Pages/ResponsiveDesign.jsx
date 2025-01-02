@@ -22,7 +22,7 @@ const ResponsiveDesign = () => {
             <img
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png"
               className="dark:hidden w-[272px] h-[572px]"
-              alt=""
+              alt="responsive"
             />
             <img
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png"
@@ -40,12 +40,12 @@ const ResponsiveDesign = () => {
             <img
               src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png"
               className="dark:hidden h-[426px] md:h-[654px]"
-              alt=""
+              alt="responsive"
             />
             <img
               src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image-dark.png"
               className="hidden dark:block h-[426px] md:h-[654px]"
-              alt=""
+              alt="responsive"
             />
           </div>
         </div>

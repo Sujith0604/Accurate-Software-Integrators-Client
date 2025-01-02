@@ -89,7 +89,7 @@ const Card = ({ developer }) => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "linear" }}
             src={`https://accurate-software-integrators-backend.onrender.com/${developer.image} `}
-            alt="Display Picture of Andres Berlin"
+            alt={developer.username}
             role="img"
             loading="lazy"
             className=" object-cover h-full w-full shadow-md rounded-3xl"

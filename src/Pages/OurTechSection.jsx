@@ -89,6 +89,7 @@ const Card = ({ title, key, image }) => {
         <img
           className=" h-[70px] w-[70px] bg-white rounded-3xl"
           src={`https://accurate-software-integrators-backend.onrender.com/${image}`}
+          alt={title}
         />
         <p className=" p-8 text-4xl  uppercase text-white ">{title}</p>
       </div>
