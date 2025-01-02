@@ -277,6 +277,7 @@ const LinkBox = ({ Icon, href }) => {
   return (
     <a
       href={href}
+      aria-label="contact"
       onMouseEnter={(e) => {
         handleMouseEnter(e);
       }}

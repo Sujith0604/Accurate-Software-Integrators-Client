@@ -8,8 +8,6 @@ const Developer = ({ children }) => {
 
   const [loading, setLoading] = useState(false);
 
-  console.log(developerContent);
-
   const fetchData = async () => {
     setLoading(true);
     try {

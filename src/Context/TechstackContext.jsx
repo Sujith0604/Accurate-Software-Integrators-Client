@@ -8,8 +8,6 @@ const Tech = ({ children }) => {
 
   const [loading, setLoading] = useState(false);
 
-  console.log(techContent);
-
   const fetchData = async () => {
     setLoading(true);
     try {

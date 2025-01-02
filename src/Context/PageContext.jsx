@@ -7,8 +7,6 @@ const Page = ({ children }) => {
   const [pagesContent, setPageContent] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  console.log(pagesContent);
-
   const fetchData = async () => {
     setLoading(true);
     try {

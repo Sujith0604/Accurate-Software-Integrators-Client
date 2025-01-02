@@ -101,6 +101,7 @@ const Header = () => {
           <img
             src="/images/LogoWithBackground-removebg-preview.png"
             className=" md:h-[80px] h-[50px] "
+            alt="ASI"
           />
         </AnchorLink>
       </motion.div>

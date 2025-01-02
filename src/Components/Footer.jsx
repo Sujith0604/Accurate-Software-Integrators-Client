@@ -14,10 +14,13 @@ const Footer = () => {
     <footer className=" bg-black">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-start justify-center lg:gap-8">
-          <img
-            src="/images/LogoWithBackground-removebg-preview.png"
-            className=" h-[50px] "
-          />
+          <a aria-label="logo" href="#hero">
+            <img
+              src="/images/LogoWithBackground-removebg-preview.png"
+              className=" h-[50px] "
+              alt="ASI"
+            />
+          </a>
 
           <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
             <div className="col-span-2">
