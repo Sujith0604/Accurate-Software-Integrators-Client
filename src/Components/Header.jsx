@@ -16,40 +16,58 @@ const Header = () => {
       <nav className=" h-[400px] w-[200px] flex md:hidden">
         <ul className=" flex flex-col gap-5 text-xl uppercase ">
           <li className=" hover:underline">
-            <AnchorLink href="#hero">Home</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#hero">
+              Home
+            </AnchorLink>
           </li>
           <li className=" hover:underline">
             {" "}
-            <AnchorLink href="#about">Our Story</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#about">
+              Our Story
+            </AnchorLink>
           </li>
           <li className=" hover:underline">
             {" "}
-            <AnchorLink href="#pricing">Pricing</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#pricing">
+              Pricing
+            </AnchorLink>
           </li>
 
           <li className=" hover:underline">
             {" "}
-            <AnchorLink href="#skills">Techstack</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#skills">
+              Techstack
+            </AnchorLink>
           </li>
           <li className=" hover:underline">
             {" "}
-            <AnchorLink href="#service">Service</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#service">
+              Service
+            </AnchorLink>
           </li>
           <li className=" hover:underline">
-            <AnchorLink href="#developer">Team</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#developer">
+              Team
+            </AnchorLink>
           </li>
           <li className=" hover:underline">
             {" "}
-            <AnchorLink href="#features">Why Us</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#features">
+              Why Us
+            </AnchorLink>
           </li>
           <li className=" hover:underline">
-            <AnchorLink href="#design">Design</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#design">
+              Design
+            </AnchorLink>
           </li>
           {/* <li className=" hover:underline">
             <AnchorLink href="#project">Projects</AnchorLink>
           </li> */}
           <li className=" hover:underline">
-            <AnchorLink href="#contact">Contact</AnchorLink>
+            <AnchorLink onClick={() => setOpen(!open)} href="#contact">
+              Contact
+            </AnchorLink>
           </li>
           <li
             className=" flex gap-5
