@@ -588,6 +588,7 @@ const OurStoryContent = ({
       ></p>
 
       <button
+        aria-label="open"
         onClick={() => setOpenSuccessModal(true)}
         className="w-full rounded bg-neutral-900 px-9 py-4  text-white transition-colors hover:bg-neutral-700 md:w-fit"
       >
@@ -615,6 +616,7 @@ const OurVisionContent = ({
       ></p>
 
       <button
+        aria-label="open"
         onClick={() => {
           setOpenVisionModal(true);
         }}
@@ -644,6 +646,7 @@ const OurMissionContent = ({
       ></p>
 
       <button
+        aria-label="open"
         onClick={() => setOpenMissionModal(true)}
         className="w-full rounded bg-neutral-900 px-9 py-4  text-white transition-colors hover:bg-neutral-700 md:w-fit"
       >

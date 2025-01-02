@@ -129,6 +129,7 @@ const Header = () => {
           <div className="flex justify-center items-center w-full h-full">
             <NavComponent />
             <button
+              aria-label="close"
               className="absolute top-5 right-5 text-white"
               onClick={() => setOpen(false)}
             >
@@ -141,6 +142,7 @@ const Header = () => {
       {!open ? (
         <button
           className="px-4 py-2 rounded-3xl md:hidden"
+          aria-label="open"
           onClick={() => setOpen(true)}
         >
           <MenuIcon />

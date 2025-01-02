@@ -14,6 +14,7 @@ const ModalComponent = ({
         <div className="flex justify-between">
           <h1 className="text-2xl font-bold">{title}</h1>
           <button
+            aria-label="close"
             className="text-xl text-white hover:text-red-700"
             onClick={onClose}
           >
