@@ -7,6 +7,7 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import MailRoundedIcon from "@mui/icons-material/MailRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { Carousal } from "../Components/Carousal";
 
 const OurDeveloper = () => {
   const { pagesContent, loading } = useContext(pageContext);
@@ -42,6 +43,7 @@ const OurDeveloper = () => {
           Scroll down
         </span>
       </div>
+
       <HorizontalScrollCarousel />
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">

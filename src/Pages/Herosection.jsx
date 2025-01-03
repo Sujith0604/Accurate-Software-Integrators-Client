@@ -54,12 +54,15 @@ const Herosection = () => {
         </div>
 
         <div className=" md:hidden flex items-center justify-center flex-col">
-          <TextAnimations
+          {/* <TextAnimations
             once={true}
             text="ASI"
             className=" text-6xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
-          />
-          <h1>Accurate Software & Integrators</h1>
+          /> */}
+          <h1 className=" text-6xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent">
+            ASI
+          </h1>
+          <h2>Accurate Software & Integrators</h2>
         </div>
 
         {pagesContent?.map(
