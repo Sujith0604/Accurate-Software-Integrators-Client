@@ -7,7 +7,7 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import MailRoundedIcon from "@mui/icons-material/MailRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Carousal } from "../Components/Carousal";
+import Carousal from "../Components/Carousal";
 
 const OurDeveloper = () => {
   const { pagesContent, loading } = useContext(pageContext);
@@ -15,7 +15,7 @@ const OurDeveloper = () => {
   if (loading) return <Loader />;
 
   return (
-    <div id="developer" className="">
+    <div id="developer" className=" flex flex-col gap-5">
       {pagesContent?.map(
         (page) =>
           page.title === "BUILDING TEAM" && (
@@ -38,17 +38,23 @@ const OurDeveloper = () => {
           )
       )}
 
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll down
-        </span>
+      <div className=" hidden md:flex flex-col ">
+        <div className="flex h-48 items-center justify-center">
+          <span className="font-semibold uppercase text-neutral-500">
+            Scroll down
+          </span>
+        </div>
+
+        <HorizontalScrollCarousel />
+        <div className="flex h-48 items-center justify-center">
+          <span className="font-semibold uppercase text-neutral-500">
+            Scroll up
+          </span>
+        </div>
       </div>
 
-      <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll up
-        </span>
+      <div className=" px-2 md:hidden">
+        <Carousal />
       </div>
     </div>
   );

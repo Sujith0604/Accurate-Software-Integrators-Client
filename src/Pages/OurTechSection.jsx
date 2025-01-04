@@ -3,6 +3,7 @@ import { useContext, useRef } from "react";
 import { techContext } from "../Context/TechstackContext";
 import { pageContext } from "../Context/PageContext";
 import Loader from "../Components/Loader";
+import TechCarousal from "../Components/TechCarousal";
 
 const OurTechSection = () => {
   const { pagesContent, loading } = useContext(pageContext);
@@ -10,7 +11,7 @@ const OurTechSection = () => {
   if (loading) return <Loader />;
 
   return (
-    <div id="skills" className="">
+    <div id="skills" className=" flex flex-col gap-5">
       {pagesContent?.map(
         (page) =>
           page.title === "What tech we use?" && (
@@ -32,16 +33,23 @@ const OurTechSection = () => {
             </div>
           )
       )}
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll Down
-        </span>
+      <div className=" hidden md:flex flex-col ">
+        <div className="flex h-48 items-center justify-center">
+          <span className="font-semibold uppercase text-neutral-500">
+            Scroll down
+          </span>
+        </div>
+
+        <HorizontalScrollCarousel />
+        <div className="flex h-48 items-center justify-center">
+          <span className="font-semibold uppercase text-neutral-500">
+            Scroll up
+          </span>
+        </div>
       </div>
-      <HorizontalScrollCarousel />
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll up
-        </span>
+
+      <div className=" px-2 md:hidden">
+        <TechCarousal />
       </div>
     </div>
   );

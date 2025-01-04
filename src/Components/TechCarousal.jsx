@@ -8,13 +8,11 @@ import "swiper/css/free-mode";
 
 // import required modules
 import { FreeMode, Autoplay, Pagination } from "swiper/modules";
-import { developerContext } from "../Context/DeveloperContext";
+import { techContext } from "../Context/TechstackContext";
 
-export default function Carousal() {
+export default function TechCarousal() {
   const [setSwiperRef] = useState(null);
-
-  const { developerContent } = useContext(developerContext);
-
+  const { techContent } = useContext(techContext);
   return (
     <div className=" sm:px-10 sm:pb-10 md:pb-20 md:px-30 lg:px-48">
       <Swiper
@@ -52,26 +50,19 @@ export default function Carousal() {
         modules={[FreeMode, Autoplay, Pagination]}
         className="mySwiper flex justify-center items-center  w-full h-auto "
       >
-        {developerContent?.map((developer) => (
+        {techContent?.map((tech) => (
           <SwiperSlide
-            key={developer._id}
+            key={tech._id}
             className=" p-10 rounded-3xl bg-green  text-white bg-neutral-900 "
           >
-            <div className="flex w-full h-[450px]  flex-col justify-center items-start space-y-5">
+            <div className="flex w-full h-[300px]  flex-col justify-center items-center space-y-5">
               <div className="flex items-center justify-center  w-full">
                 <img
                   className=" h-[200px]  bg-cover rounded-3xl"
-                  src={`https://accurate-software-integrators-backend.onrender.com/${developer.image} `}
+                  src={`https://accurate-software-integrators-backend.onrender.com/${tech.image} `}
                 />
               </div>
-              <h1 className=" text-xl font-bold">{developer.username}</h1>
-              <p className=" text-sm font-semibold">{developer.title}</p>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: developer.content,
-                }}
-                className="text-gray-200"
-              ></p>
+              <p className=" text-xl font-semibold">{tech.title}</p>
             </div>
           </SwiperSlide>
         ))}
