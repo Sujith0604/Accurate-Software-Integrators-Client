@@ -62,7 +62,75 @@ const OurDeveloper = () => {
 
 const HorizontalScrollCarousel = () => {
   const targetRef = useRef(null);
-  const { developerContent } = useContext(developerContext);
+
+  const developer = [
+    {
+      name: "Sujith Karthikaiselvan",
+      title: "Mernstack Developer",
+      description:
+        "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
+      image: "/images/sujith.JPG",
+      socialMedia: {
+        facebook: "#",
+        instagram: "#",
+        whatsapp: "#",
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Kaviarasan",
+      title: "UI/UX Designer",
+      description:
+        "Hi, I'm Kaviarasan, I'm the designer for Accurate Software & Integrators. I create design in figma, wix and so.",
+      image: "/images/kavi.jpg",
+      socialMedia: {
+        facebook: "#",
+        instagram: "#",
+        whatsapp: "#",
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Sumith",
+      title: "Logo Designer",
+      description:
+        "Hi, this is Sumith Karthikaiselvan, Logo Designer and also social media team. We create social media and also create new design.",
+      image: "/images/sumith.JPG",
+      socialMedia: {
+        facebook: "#",
+        instagram: "#",
+        whatsapp: "#",
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Rahul",
+      title: "Social Media Team",
+      description:
+        "Hi, this is Rahul, I'm the social media team for our company. I handle all the social media stuffs.",
+      image: "/images/rahul.JPG",
+      socialMedia: {
+        facebook: "#",
+        instagram: "#",
+        whatsapp: "#",
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Kannadhasan",
+      title: "Q & A Team",
+      description:
+        "Hi, I am Kannadhasan. I'm a QA manual tester in Accurate software and intergators. I develop test plan and test cases for manual testing. Execute manual testing to identify software defects and report them to development team.",
+      image: "/images/guru.jpg",
+      socialMedia: {
+        facebook: "#",
+        instagram: "#",
+        whatsapp: "#",
+        linkedin: "#",
+      },
+    },
+  ];
+
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
@@ -73,7 +141,7 @@ const HorizontalScrollCarousel = () => {
     <section ref={targetRef} className="relative h-[300vh] bg-black">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
-          {developerContent?.map((developers) => {
+          {developer?.map((developers) => {
             return <Card developer={developers} key={developers._id} />;
           })}
         </motion.div>
@@ -95,8 +163,8 @@ const Card = ({ developer }) => {
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "linear" }}
-            src={`https://accurate-software-integrators-backend.onrender.com/${developer.image} `}
-            alt={developer.username}
+            src={developer.image}
+            alt={developer.name}
             role="img"
             loading="lazy"
             className=" object-cover h-full w-full shadow-md rounded-3xl"
@@ -105,15 +173,12 @@ const Card = ({ developer }) => {
 
         <div className=" flex flex-col items-center gap-2 justify-center md:w-[600px] px-4">
           <h1 className="font-bold text-3xl text-white text-center mb-1">
-            {developer.username}
+            {developer.name}
           </h1>
           <p className="text-xl text-center">{developer.title}</p>
-          <p
-            className="text-center   pt-3 font-normal text-sm"
-            dangerouslySetInnerHTML={{
-              __html: developer.content,
-            }}
-          ></p>
+          <p className="text-center   pt-3 font-normal text-sm">
+            {developer.description}
+          </p>
           <div
             className=" flex gap-5
            items-center"

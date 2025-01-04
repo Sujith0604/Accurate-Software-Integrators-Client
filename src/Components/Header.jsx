@@ -46,11 +46,6 @@ const Header = () => {
             </AnchorLink>
           </li>
           <li className=" hover:underline">
-            <AnchorLink onClick={() => setOpen(!open)} href="#developer">
-              Team
-            </AnchorLink>
-          </li>
-          <li className=" hover:underline">
             {" "}
             <AnchorLink onClick={() => setOpen(!open)} href="#features">
               Why Us
@@ -58,9 +53,15 @@ const Header = () => {
           </li>
           <li className=" hover:underline">
             <AnchorLink onClick={() => setOpen(!open)} href="#design">
-              Design
+              Work process
             </AnchorLink>
           </li>
+          <li className=" hover:underline">
+            <AnchorLink onClick={() => setOpen(!open)} href="#developer">
+              Team
+            </AnchorLink>
+          </li>
+
           {/* <li className=" hover:underline">
             <AnchorLink href="#project">Projects</AnchorLink>
           </li> */}
@@ -182,15 +183,16 @@ const Header = () => {
             <AnchorLink href="#service">Service</AnchorLink>
           </li>
           <li className=" hover:underline">
-            <AnchorLink href="#developer">Team</AnchorLink>
-          </li>
-          <li className=" hover:underline">
             {" "}
             <AnchorLink href="#features">Why Us</AnchorLink>
           </li>
           <li className=" hover:underline">
-            <AnchorLink href="#design">Design</AnchorLink>
+            <AnchorLink href="#design">Work Process</AnchorLink>
           </li>
+          <li className=" hover:underline">
+            <AnchorLink href="#developer">Team</AnchorLink>
+          </li>
+
           {/* <li className=" hover:underline">
             <AnchorLink href="#project">Projects</AnchorLink>
           </li> */}
