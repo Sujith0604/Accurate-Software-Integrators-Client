@@ -83,7 +83,7 @@ const Card = ({ title, key, image }) => {
   return (
     <div
       key={key}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-900 rounded-3xl"
+      className="group relative h-[300px] w-[300px] overflow-hidden bg-neutral-900 rounded-3xl"
     >
       <div
         style={{
