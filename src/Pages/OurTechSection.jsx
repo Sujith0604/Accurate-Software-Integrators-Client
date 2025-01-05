@@ -134,7 +134,7 @@ const Card = ({ title, key, image }) => {
       ></div>
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 ">
         <img
-          className=" h-[70px] w-[70px] bg-white rounded-3xl"
+          className=" h-[200px] w-full bg-white rounded-3xl"
           src={image}
           alt={title}
         />
