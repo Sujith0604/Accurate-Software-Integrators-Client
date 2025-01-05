@@ -169,14 +169,16 @@ const ClipPathLinks = () => {
   return (
     <div className="divide-y divide-neutral-900 border border-neutral-900">
       <div className="grid grid-cols-2 divide-x divide-neutral-900">
-        <LinkBox Icon={SiGoogle} href="#" />
+        <LinkBox
+          Icon={SiGoogle}
+          href="mailto:accuratesoftwareintegrators@gmail.com"
+        />
         <LinkBox
           Icon={FaWhatsapp}
           href="whatsapp://send?text=Hello There!&phone=+918870895978"
         />
       </div>
       <div className="grid grid-cols-4 divide-x divide-neutral-900">
-        <LinkBox Icon={FaGithub} href="#" />
         <LinkBox
           Icon={FaMailBulk}
           href="mailto:accuratesoftwareintegrators@gmail.com"
@@ -277,6 +279,7 @@ const LinkBox = ({ Icon, href }) => {
   return (
     <a
       href={href}
+      target="_blank"
       aria-label="contact"
       onMouseEnter={(e) => {
         handleMouseEnter(e);
