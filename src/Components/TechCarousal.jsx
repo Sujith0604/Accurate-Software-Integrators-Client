@@ -40,7 +40,7 @@ export default function TechCarousal() {
     {
       id: 6,
       title: "NodeJs",
-      image: "/images/nodejs-t.webp",
+      image: "/images/nodejs rt.png",
     },
     {
       id: 7,
@@ -55,7 +55,7 @@ export default function TechCarousal() {
     {
       id: 9,
       title: "Wix",
-      image: "/images/WIX-t.jpg",
+      image: "/images/wix-tt.webp",
     },
     {
       id: 10,

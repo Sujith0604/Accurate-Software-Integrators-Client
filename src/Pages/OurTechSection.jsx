@@ -72,7 +72,7 @@ const HorizontalScrollCarousel = () => {
     {
       id: 6,
       title: "NodeJs",
-      image: "/images/nodejs-t.webp",
+      image: "/images/nodejs rt.png",
     },
     {
       id: 7,
@@ -87,7 +87,7 @@ const HorizontalScrollCarousel = () => {
     {
       id: 9,
       title: "Wix",
-      image: "/images/WIX-t.jpg",
+      image: "/images/wix-tt.webp",
     },
     {
       id: 10,
@@ -139,7 +139,7 @@ const Card = ({ title, key, image }) => {
             scale: 1.1,
             transition: { duration: 0.2, type: "fade" },
           }}
-          className=" h-[200px] w-full bg-white rounded-3xl"
+          className=" h-[200px] w-full rounded-3xl"
           src={image}
           alt={title}
         />
