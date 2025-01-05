@@ -11,10 +11,7 @@ const OurTechSection = () => {
   if (loading) return <Loader />;
 
   return (
-    <div
-      id="skills"
-      className=" flex flex-col gap-5 bg-[url('/images/TechImage.jpg')] bg-cover"
-    >
+    <div id="skills" className=" flex flex-col gap-5">
       {pagesContent?.map(
         (page) =>
           page.title === "What tech we use?" && (
@@ -36,7 +33,7 @@ const OurTechSection = () => {
             </div>
           )
       )}
-      <div className=" hidden md:flex flex-col ">
+      <div className=" hidden md:flex flex-col  ">
         <div className="flex h-48 items-center justify-center">
           <span className="font-semibold uppercase text-neutral-500">
             Scroll down
@@ -51,7 +48,7 @@ const OurTechSection = () => {
         </div>
       </div>
 
-      <div className=" px-2 md:hidden">
+      <div className=" px-2 md:hidden bg-[url('/images/TechImage.jpg')] bg-cover">
         <TechCarousal />
       </div>
     </div>
@@ -68,8 +65,11 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] ">
-      <div className="sticky top-0 flex h-[400px] items-center overflow-hidden ">
+    <section
+      ref={targetRef}
+      className="relative h-[300vh] bg-[url('/images/TechImage.jpg')] bg-cover"
+    >
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {techContent?.map((tech) => {
             return (
