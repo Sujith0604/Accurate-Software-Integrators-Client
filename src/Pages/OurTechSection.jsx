@@ -138,7 +138,7 @@ const Card = ({ title, key, image }) => {
           src={image}
           alt={title}
         />
-        <p className=" p-8 text-4xl  uppercase text-white ">{title}</p>
+        <p className=" p-8 text-2xl  uppercase text-white ">{title}</p>
       </div>
     </div>
   );
