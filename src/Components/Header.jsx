@@ -84,7 +84,7 @@ const Header = () => {
             <a
               target="_blank"
               aria-label="instagram"
-              href="https://www.instagram.com/accurate_software_/profilecard/?igsh=MWxraGF4NXI3NnFqYg=="
+              href="https://www.instagram.com/_accurate_software__/"
             >
               <InstagramIcon />
             </a>
