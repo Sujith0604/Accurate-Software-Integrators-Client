@@ -64,7 +64,10 @@ const ServiceSection = () => {
                  mb-8
                  "
             >
-              <div
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "linear" }}
                 className="
                     w-[70px]
                     h-[70px]
@@ -88,7 +91,7 @@ const ServiceSection = () => {
                     fill="white"
                   />
                 </svg>
-              </div>
+              </motion.div>
 
               {serviceContent?.map(
                 (service) =>
@@ -122,7 +125,10 @@ const ServiceSection = () => {
                  mb-8
                  "
             >
-              <div
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "linear" }}
                 className="
                     w-[70px]
                     h-[70px]
@@ -153,7 +159,7 @@ const ServiceSection = () => {
                     mask="url(#path-1-inside-1)"
                   />
                 </svg>
-              </div>
+              </motion.div>
               {serviceContent?.map(
                 (service) =>
                   service.title === "Based on Tailwind CSS" && (
@@ -186,7 +192,10 @@ const ServiceSection = () => {
                  mb-8
                  "
             >
-              <div
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "linear" }}
                 className="
                     w-[70px]
                     h-[70px]
@@ -222,7 +231,7 @@ const ServiceSection = () => {
                     fill="white"
                   />
                 </svg>
-              </div>
+              </motion.div>
               {serviceContent?.map(
                 (service) =>
                   service.title === "300+ Components" && (
@@ -241,6 +250,7 @@ const ServiceSection = () => {
               )}
             </motion.div>
           </div>
+
           <div className="w-full md:w-1/2 lg:w-1/3 px-4">
             <motion.div
               className="
@@ -254,7 +264,10 @@ const ServiceSection = () => {
                  mb-8
                  "
             >
-              <div
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "linear" }}
                 className="
                     w-[70px]
                     h-[70px]
@@ -290,7 +303,7 @@ const ServiceSection = () => {
                     fill="white"
                   />
                 </svg>
-              </div>
+              </motion.div>
               {serviceContent?.map(
                 (service) =>
                   service.title === "Speed Optimized" && (
@@ -309,6 +322,7 @@ const ServiceSection = () => {
               )}
             </motion.div>
           </div>
+
           <div className="w-full md:w-1/2 lg:w-1/3 px-4">
             <motion.div
               className="
@@ -322,7 +336,10 @@ const ServiceSection = () => {
                  mb-8
                  "
             >
-              <div
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "linear" }}
                 className="
                     w-[70px]
                     h-[70px]
@@ -346,7 +363,7 @@ const ServiceSection = () => {
                     fill="white"
                   />
                 </svg>
-              </div>
+              </motion.div>
               {serviceContent?.map(
                 (service) =>
                   service.title === "Fully Customizable" && (
@@ -365,6 +382,7 @@ const ServiceSection = () => {
               )}
             </motion.div>
           </div>
+
           <div className="w-full md:w-1/2 lg:w-1/3 px-4">
             <motion.div
               className="
@@ -378,7 +396,10 @@ const ServiceSection = () => {
                  mb-8
                  "
             >
-              <div
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "linear" }}
                 className="
                     w-[70px]
                     h-[70px]
@@ -406,7 +427,7 @@ const ServiceSection = () => {
                     fill="white"
                   />
                 </svg>
-              </div>
+              </motion.div>
               {serviceContent?.map(
                 (service) =>
                   service.title === "Regular Updates" && (
