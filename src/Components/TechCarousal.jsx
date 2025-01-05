@@ -8,11 +8,32 @@ import "swiper/css/free-mode";
 
 // import required modules
 import { FreeMode, Autoplay, Pagination } from "swiper/modules";
-import { techContext } from "../Context/TechstackContext";
 
 export default function TechCarousal() {
   const [setSwiperRef] = useState(null);
-  const { techContent } = useContext(techContext);
+  const techContent = [
+    {
+      id: 1,
+      title: "HTML",
+      image: "/images/html.webp",
+    },
+    {
+      id: 2,
+      title: "CSS",
+      image: "/images/css.png",
+    },
+    {
+      id: 3,
+      title: "Javascript",
+      image: "/images/js.png",
+    },
+    {
+      id: 4,
+      title: "Reactjs",
+      image: "/images/Reactjs.png",
+    },
+  ];
+
   return (
     <div className=" sm:px-10 sm:pb-10 md:pb-20 md:px-30 lg:px-48">
       <Swiper
@@ -52,7 +73,7 @@ export default function TechCarousal() {
       >
         {techContent?.map((tech) => (
           <SwiperSlide
-            key={tech._id}
+            key={tech.id}
             className=" p-10 rounded-3xl bg-green  text-white bg-neutral-900 "
           >
             <div className="flex w-full h-[300px]  flex-col justify-center items-center space-y-5">
@@ -60,6 +81,7 @@ export default function TechCarousal() {
                 <img
                   className=" h-[200px]  bg-cover rounded-3xl"
                   src={`https://accurate-software-integrators-backend.onrender.com/${tech.image} `}
+                  alt={tech.title}
                 />
               </div>
               <p className=" text-xl font-semibold">{tech.title}</p>

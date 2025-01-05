@@ -1,15 +1,12 @@
 import { motion, useTransform, useScroll } from "framer-motion";
-import { useContext, useRef } from "react";
-import { techContext } from "../Context/TechstackContext";
-import { pageContext } from "../Context/PageContext";
-import Loader from "../Components/Loader";
+import { useRef } from "react";
 import TechCarousal from "../Components/TechCarousal";
 
 const OurTechSection = () => {
   return (
     <div id="skills" className=" flex flex-col gap-5">
       <div className=" flex flex-col gap-5  items-center w-full   h-full justify-center">
-        <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  font-bold text-center md:text-start">
+        <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text  text-transparent  font-bold text-center md:text-start">
           What tech we use?
         </h2>
         <p className=" text-gray-500 text-center ">
@@ -100,7 +97,6 @@ const Card = ({ title, key, image }) => {
     >
       <div
         style={{
-          // backgroundImage: `url(http://localhost:3000/${image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
