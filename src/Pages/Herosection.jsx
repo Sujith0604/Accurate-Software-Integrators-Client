@@ -11,7 +11,12 @@ const Herosection = () => {
       className=" text-white relative h-screen  flex flex-col gap-5 items-center justify-center "
     >
       <div className=" absolute w-[100%] h-[100%] top-0 left-0 bg-black bg-opacity-40 backdrop-blur-sm"></div>
-      <video autoPlay loop muted className=" w-[100%] h-[100%] object-cover">
+      <video
+        autoPlay
+        loop
+        muted
+        className=" w-[100%] h-[100%] object-cover hidden md:flex"
+      >
         <source src="/images/bgvideo.mp4" type="video/mp4" />
       </video>
       <div className="flex flex-col gap-5 w-[100%] h-[100%] items-center justify-center absolute top-0">
