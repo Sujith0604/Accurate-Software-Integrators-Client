@@ -61,8 +61,38 @@ const HorizontalScrollCarousel = () => {
     },
     {
       id: 4,
-      title: "Reactjs",
+      title: "ReactJs",
       image: "/images/Reactjs.png",
+    },
+    {
+      id: 5,
+      title: "NextJs",
+      image: "/images/nextjs-t.jpeg",
+    },
+    {
+      id: 6,
+      title: "NodeJs",
+      image: "/images/nodejs-t.webp",
+    },
+    {
+      id: 7,
+      title: "MongoDB",
+      image: "/images/mongodb-t.png",
+    },
+    {
+      id: 8,
+      title: "Figma",
+      image: "/images/figma-t.avif",
+    },
+    {
+      id: 9,
+      title: "Wix",
+      image: "/images/WIX-t.jpg",
+    },
+    {
+      id: 10,
+      title: "Framer Motion",
+      image: "/images/framer-t.png",
     },
   ];
 

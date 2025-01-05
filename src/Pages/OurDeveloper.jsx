@@ -57,7 +57,7 @@ const HorizontalScrollCarousel = () => {
       title: "Web Application Developer",
       description:
         "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
-      image: "/images/sujith.JPG",
+      image: "/images/sk.jpg",
       socialMedia: {
         facebook: "#",
         instagram: "#",
@@ -83,7 +83,7 @@ const HorizontalScrollCarousel = () => {
       title: "Logo Designer",
       description:
         "Hi, this is Sumith Karthikaiselvan, Logo Designer and also social media team. We create social media and also create new design.",
-      image: "/images/sumith.JPG",
+      image: "/images/sumk.jpg",
       socialMedia: {
         facebook: "#",
         instagram: "#",
