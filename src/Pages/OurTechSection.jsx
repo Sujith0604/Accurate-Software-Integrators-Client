@@ -6,33 +6,23 @@ import Loader from "../Components/Loader";
 import TechCarousal from "../Components/TechCarousal";
 
 const OurTechSection = () => {
-  const { pagesContent, loading } = useContext(pageContext);
-
-  if (loading) return <Loader />;
-
   return (
     <div id="skills" className=" flex flex-col gap-5">
-      {pagesContent?.map(
-        (page) =>
-          page.title === "What tech we use?" && (
-            <div
-              key={page._id}
-              className=" flex flex-col gap-5  items-center w-full   h-full justify-center"
-            >
-              <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  font-bold text-center md:text-start">
-                {page.title}
-              </h2>
-              <p className=" text-gray-500 text-center ">{page.subTitle}</p>
+      <div className=" flex flex-col gap-5  items-center w-full   h-full justify-center">
+        <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  font-bold text-center md:text-start">
+          What tech we use?
+        </h2>
+        <p className=" text-gray-500 text-center ">
+          We use both frontend and backend tools
+        </p>
 
-              <p
-                className=" text-gray-500 text-center "
-                dangerouslySetInnerHTML={{
-                  __html: page.content,
-                }}
-              ></p>
-            </div>
-          )
-      )}
+        <p className=" text-gray-500 text-center ">
+          We develop simple, intuitive and responsive user interface that helps
+          users get things done with less effort and time with those
+          technologies.
+        </p>
+      </div>
+
       <div className=" hidden md:flex flex-col  ">
         <div className="flex h-48 items-center justify-center">
           <span className="font-semibold uppercase text-neutral-500">
@@ -56,7 +46,29 @@ const OurTechSection = () => {
 };
 
 const HorizontalScrollCarousel = () => {
-  const { techContent } = useContext(techContext);
+  const techContent = [
+    {
+      id: 1,
+      title: "HTML",
+      image: "/images/html.webp",
+    },
+    {
+      id: 2,
+      title: "CSS",
+      image: "/images/css.png",
+    },
+    {
+      id: 3,
+      title: "Javascript",
+      image: "/images/js.png",
+    },
+    {
+      id: 4,
+      title: "Reactjs",
+      image: "/images/Reactjs.png",
+    },
+  ];
+
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -72,9 +84,7 @@ const HorizontalScrollCarousel = () => {
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {techContent?.map((tech) => {
-            return (
-              <Card title={tech.title} image={tech.image} key={tech._id} />
-            );
+            return <Card title={tech.title} image={tech.image} key={tech.id} />;
           })}
         </motion.div>
       </div>
@@ -99,7 +109,7 @@ const Card = ({ title, key, image }) => {
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 ">
         <img
           className=" h-[70px] w-[70px] bg-white rounded-3xl"
-          src={`https://accurate-software-integrators-backend.onrender.com/${image}`}
+          src={image}
           alt={title}
         />
         <p className=" p-8 text-4xl  uppercase text-white ">{title}</p>
@@ -107,25 +117,5 @@ const Card = ({ title, key, image }) => {
     </div>
   );
 };
-
-// const Card = ({ title, key, image }) => {
-//   return (
-//     <article
-//       key={key}
-//       className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 "
-//     >
-//       <img
-//         src={`http://localhost:3000/${image}`}
-//         alt="University of Southern California"
-//         className="absolute inset-0 h-full w-full object-cover"
-//       />
-//       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-//       <h3 className="z-10 mt-3 text-3xl font-bold text-white">{title}</h3>
-//       {/* <div className="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-//         City of love
-//       </div> */}
-//     </article>
-//   );
-// };
 
 export default OurTechSection;

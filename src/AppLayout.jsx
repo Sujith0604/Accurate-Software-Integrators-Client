@@ -18,18 +18,6 @@ import WhyCooseUs from "./Pages/WhyCooseUs";
 import MainLoader from "./Components/MainLoader";
 
 const AppLayout = () => {
-  const { loading } = useContext(pageContext);
-
-  if (loading)
-    return (
-      <div className=" h-screen flex flex-col items-center justify-center gap-2">
-        <h1 className=" font-bold md:text-7xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent">
-          ASI
-        </h1>
-        <MainLoader />
-      </div>
-    );
-
   return (
     <div className=" flex flex-col  scrollbar-thin  scrollbar-thumb-gray-600 scrollbar-track-gray-500 ">
       <Header />
@@ -38,16 +26,13 @@ const AppLayout = () => {
         <AboutSection />
         <CompanyName />
         <Pricing />
-
         <OurTechSection />
         <ServiceSection />
         <WhyCooseUs />
         <DesignSection />
         {/* <DeveloperSection /> */}
         <OurDeveloper />
-
         {/* <ProjectSection /> */}
-
         {/* <TestimonySection /> */}
         <ContactSection />
       </main>

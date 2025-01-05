@@ -3,8 +3,7 @@ import { useContext } from "react";
 import { serviceContext } from "../Context/ServiceContext";
 import { pageContext } from "../Context/PageContext";
 const ServiceSection = () => {
-  const { serviceContent, setServiceContent, loading } =
-    useContext(serviceContext);
+  const { serviceContent } = useContext(serviceContext);
 
   const { pagesContent } = useContext(pageContext);
 
@@ -14,15 +13,12 @@ const ServiceSection = () => {
       className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] border-t border-b border-neutral-900"
     >
       <div className="container">
-        {pagesContent?.map(
-          (page) =>
-            page.title === "Our Services" && (
-              <div key={page._id} className="flex flex-wrap -mx-4">
-                <div className="w-full px-4">
-                  <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
-                    <span className=" text-xl font-bold ">{page.title}</span>
-                    <h2
-                      className="
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full px-4">
+            <div className="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
+              <span className=" text-xl font-bold ">Our Services</span>
+              <h2
+                className="
                     font-bold
                     text-3xl
                     sm:text-4xl
@@ -30,20 +26,18 @@ const ServiceSection = () => {
                   
                     mb-4
                     bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600  bg-clip-text text-transparent"
-                    >
-                      {page.subTitle}
-                    </h2>
-                    <p
-                      className=" text-gray-500"
-                      dangerouslySetInnerHTML={{
-                        __html: page.content,
-                      }}
-                    ></p>
-                  </div>
-                </div>
-              </div>
-            )
-        )}
+              >
+                What We Offer
+              </h2>
+              <p className=" text-gray-500">
+                We specialize in creating responsive and user-friendly websites
+                tailored to your business objectives. This includes both static
+                and dynamic website development, ensuring that your site is
+                visually appealing and functional across all devices.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: -100 }}
@@ -92,23 +86,15 @@ const ServiceSection = () => {
                   />
                 </svg>
               </motion.div>
-
-              {serviceContent?.map(
-                (service) =>
-                  service.title === "Refreshing Design" && (
-                    <div key={service._id}>
-                      <h4 className="font-semibold text-xl text-white mb-3">
-                        {service.title}
-                      </h4>
-                      <p
-                        className="text-body-color"
-                        dangerouslySetInnerHTML={{
-                          __html: service.content,
-                        }}
-                      ></p>
-                    </div>
-                  )
-              )}
+              <div>
+                <h4 className="font-semibold text-xl text-white mb-3">
+                  Refreshing Design
+                </h4>
+                <p className="text-body-color">
+                  We dejoy working with discerning clients, people for whom
+                  qualuty, service, integrity & aesthetics.
+                </p>
+              </div>
             </motion.div>
           </div>
 
@@ -160,22 +146,16 @@ const ServiceSection = () => {
                   />
                 </svg>
               </motion.div>
-              {serviceContent?.map(
-                (service) =>
-                  service.title === "Based on Tailwind CSS" && (
-                    <div key={service._id}>
-                      <h4 className="font-semibold text-xl text-white mb-3">
-                        {service.title}
-                      </h4>
-                      <p
-                        className="text-body-color"
-                        dangerouslySetInnerHTML={{
-                          __html: service.content,
-                        }}
-                      ></p>
-                    </div>
-                  )
-              )}
+
+              <div>
+                <h4 className="font-semibold text-xl text-white mb-3">
+                  Based on Tailwind CSS
+                </h4>
+                <p className="text-body-color">
+                  We dejoy working with discerning clients, people for whom
+                  qualuty, service, integrity & aesthetics.
+                </p>
+              </div>
             </motion.div>
           </div>
 
@@ -232,22 +212,16 @@ const ServiceSection = () => {
                   />
                 </svg>
               </motion.div>
-              {serviceContent?.map(
-                (service) =>
-                  service.title === "300+ Components" && (
-                    <div key={service._id}>
-                      <h4 className="font-semibold text-xl text-white mb-3">
-                        {service.title}
-                      </h4>
-                      <p
-                        className="text-body-color"
-                        dangerouslySetInnerHTML={{
-                          __html: service.content,
-                        }}
-                      ></p>
-                    </div>
-                  )
-              )}
+
+              <div>
+                <h4 className="font-semibold text-xl text-white mb-3">
+                  300+ Components
+                </h4>
+                <p className="text-body-color">
+                  We dejoy working with discerning clients, people for whom
+                  qualuty, service, integrity & aesthetics.
+                </p>
+              </div>
             </motion.div>
           </div>
 
@@ -304,22 +278,16 @@ const ServiceSection = () => {
                   />
                 </svg>
               </motion.div>
-              {serviceContent?.map(
-                (service) =>
-                  service.title === "Speed Optimized" && (
-                    <div key={service._id}>
-                      <h4 className="font-semibold text-xl text-white mb-3">
-                        {service.title}
-                      </h4>
-                      <p
-                        className="text-body-color"
-                        dangerouslySetInnerHTML={{
-                          __html: service.content,
-                        }}
-                      ></p>
-                    </div>
-                  )
-              )}
+
+              <div>
+                <h4 className="font-semibold text-xl text-white mb-3">
+                  Speed Optimized
+                </h4>
+                <p className="text-body-color">
+                  We dejoy working with discerning clients, people for whom
+                  qualuty, service, integrity & aesthetics.
+                </p>
+              </div>
             </motion.div>
           </div>
 
@@ -364,22 +332,16 @@ const ServiceSection = () => {
                   />
                 </svg>
               </motion.div>
-              {serviceContent?.map(
-                (service) =>
-                  service.title === "Fully Customizable" && (
-                    <div key={service._id}>
-                      <h4 className="font-semibold text-xl text-white mb-3">
-                        {service.title}
-                      </h4>
-                      <p
-                        className="text-body-color"
-                        dangerouslySetInnerHTML={{
-                          __html: service.content,
-                        }}
-                      ></p>
-                    </div>
-                  )
-              )}
+
+              <div>
+                <h4 className="font-semibold text-xl text-white mb-3">
+                  Fully Customizable
+                </h4>
+                <p className="text-body-color">
+                  We dejoy working with discerning clients, people for whom
+                  qualuty, service, integrity & aesthetics.
+                </p>
+              </div>
             </motion.div>
           </div>
 
@@ -428,22 +390,16 @@ const ServiceSection = () => {
                   />
                 </svg>
               </motion.div>
-              {serviceContent?.map(
-                (service) =>
-                  service.title === "Regular Updates" && (
-                    <div key={service._id}>
-                      <h4 className="font-semibold text-xl text-white mb-3">
-                        {service.title}
-                      </h4>
-                      <p
-                        className="text-body-color"
-                        dangerouslySetInnerHTML={{
-                          __html: service.content,
-                        }}
-                      ></p>
-                    </div>
-                  )
-              )}
+
+              <div>
+                <h4 className="font-semibold text-xl text-white mb-3">
+                  Regular Updates
+                </h4>
+                <p className="text-body-color">
+                  We dejoy working with discerning clients, people for whom
+                  qualuty, service, integrity & aesthetics.
+                </p>
+              </div>
             </motion.div>
           </div>
         </motion.div>

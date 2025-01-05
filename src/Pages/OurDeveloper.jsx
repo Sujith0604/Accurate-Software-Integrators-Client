@@ -10,33 +10,21 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Carousal from "../Components/Carousal";
 
 const OurDeveloper = () => {
-  const { pagesContent, loading } = useContext(pageContext);
-
-  if (loading) return <Loader />;
-
   return (
     <div id="developer" className=" flex flex-col gap-5">
-      {pagesContent?.map(
-        (page) =>
-          page.title === "BUILDING TEAM" && (
-            <div
-              key={page._id}
-              className=" flex flex-col gap-5  items-center w-full   h-full justify-center"
-            >
-              <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  font-bold text-center md:text-start">
-                {page.title}
-              </h2>
-              <p className=" text-gray-500 text-center ">{page.subTitle}</p>
+      <div className=" flex flex-col gap-5  items-center w-full   h-full justify-center">
+        <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  font-bold text-center md:text-start">
+          BUILDING TEAM
+        </h2>
+        <p className=" text-gray-500 text-center ">
+          The Talented People Behind the Scenes of the Organization
+        </p>
 
-              <p
-                className=" text-gray-500 text-center "
-                dangerouslySetInnerHTML={{
-                  __html: page.content,
-                }}
-              ></p>
-            </div>
-          )
-      )}
+        <p className=" text-gray-500 text-center ">
+          Web developers are responsible for creating websites that meet user
+          expectations in terms of aesthetics, functionality, and performance.
+        </p>
+      </div>
 
       <div className=" hidden md:flex flex-col ">
         <div className="flex h-48 items-center justify-center">

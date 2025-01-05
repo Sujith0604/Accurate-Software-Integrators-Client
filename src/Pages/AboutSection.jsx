@@ -357,7 +357,6 @@ import { useContext } from "react";
 import ModalComponent from "../Components/ModalComponent";
 
 export const AboutSection = () => {
-  const { pagesContent, loading } = useContext(pageContext);
   const [openSuccessModel, setOpenSuccessModal] = useState(false);
   const [openVisionModel, setOpenVisionModal] = useState(false);
   const [openMissionModel, setOpenMissionModal] = useState(false);
@@ -373,15 +372,18 @@ export const AboutSection = () => {
       "Our story started in Coimbatore, where we saw firsthand the struggles of small and medium-sized enterprises in navigating the complexities of web development. With backgrounds in software engineering, design, marketing we set out to create a company that would bridge the gap between technical expertise and user-friendly design.",
     challenge:
       "Challenges and Growth Like any startup, we faced numerous challenges along the way. From limited resources to fierce competition, every obstacle fueled our determination to succeed. We learned valuable lessons about adaptability and resilience, which shaped our approach to web development. Over the years, we have evolved from a small team into a thriving company with a diverse portfolio of clients across various industries.",
+    buttonName: "Learn More",
   };
 
   const ourVision = {
     title: "Our Vision",
+
     content:
       "To empower businesses of all sizes with cutting-edge web design and development solutions that foster growth and success, ensuring every client achieves their organizational goals through tailored strategies",
     subtitle: "The Future",
     start:
       "Our vision is to be a global leader in web development, focused on constant innovation and exceptional service delivery that enhances our clients' online presence, We aim to create user-centered websites that not only meet but exceed client expectations, driving engagement and facilitating business growth through effective digital solutions",
+    buttonName: "Learn More",
   };
 
   const ourMission = {
@@ -391,102 +393,83 @@ export const AboutSection = () => {
     subtitle: "The Future",
     start:
       "We strive to understand our clients' unique needs and deliver tailored web solutions that enhance their operational efficiency and market presence",
+    buttonName: "Learn More",
   };
 
   /////////////////////////////////
 
-  if (loading) return <Loader />;
-
   return (
     <section id="about" className=" text-white">
-      {pagesContent?.map(
-        (page) =>
-          page.title === "Our Story" && (
-            <TextParallaxContent
-              key={page._id}
-              imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              subheading={page.title}
-              heading={page.subTitle}
-            >
-              <OurStoryContent
-                content={page.content}
-                title={page.title}
-                subtitle={page.subTitle}
-                buttoname={page.buttonName}
-                setOpenSuccessModal={setOpenSuccessModal}
-              />
-              {openSuccessModel && (
-                <ModalComponent
-                  title={ourStory.title}
-                  content={ourStory.content}
-                  subtitle={ourStory.subtitle}
-                  start={ourStory.start}
-                  challenge={ourStory.challenge}
-                  onClose={() => setOpenSuccessModal(false)}
-                />
-              )}
-            </TextParallaxContent>
-          )
-      )}
+      <TextParallaxContent
+        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading={ourStory.title}
+        heading={ourStory.subtitle}
+      >
+        <OurStoryContent
+          content={ourStory.content}
+          title={ourStory.title}
+          subtitle={ourStory.subTitle}
+          buttoname={ourMission.buttonName}
+          setOpenSuccessModal={setOpenSuccessModal}
+        />
+        {openSuccessModel && (
+          <ModalComponent
+            title={ourStory.title}
+            content={ourStory.content}
+            subtitle={ourStory.subtitle}
+            start={ourStory.start}
+            challenge={ourStory.challenge}
+            onClose={() => setOpenSuccessModal(false)}
+          />
+        )}
+      </TextParallaxContent>
 
-      {pagesContent?.map(
-        (page) =>
-          page.title === "Our Vision" && (
-            <TextParallaxContent
-              key={page._id}
-              imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              subheading={page.title}
-              heading={page.subTitle}
-            >
-              <OurVisionContent
-                content={page.content}
-                title={page.title}
-                subtitle={page.subTitle}
-                buttoname={page.buttonName}
-                setOpenVisionModal={setOpenVisionModal}
-              />
-              {openVisionModel && (
-                <ModalComponent
-                  title={ourVision.title}
-                  content={ourVision.content}
-                  subtitle={ourVision.subtitle}
-                  start={ourVision.start}
-                  onClose={() => setOpenVisionModal(false)}
-                />
-              )}
-            </TextParallaxContent>
-          )
-      )}
+      <TextParallaxContent
+        imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading={ourVision.title}
+        heading={ourVision.subtitle}
+      >
+        <OurVisionContent
+          content={ourVision.content}
+          title={ourVision.title}
+          subtitle={ourVision.subtitle}
+          buttoname={ourVision.buttonName}
+          setOpenVisionModal={setOpenVisionModal}
+        />
+        {openVisionModel && (
+          <ModalComponent
+            title={ourVision.title}
+            content={ourVision.content}
+            subtitle={ourVision.subtitle}
+            start={ourVision.start}
+            onClose={() => setOpenVisionModal(false)}
+          />
+        )}
+      </TextParallaxContent>
 
-      {pagesContent?.map(
-        (page) =>
-          page.title === "Our Mission" && (
-            <TextParallaxContent
-              key={page._id}
-              imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              subheading={page.title}
-              heading={page.subTitle}
-            >
-              <OurMissionContent
-                content={page.content}
-                title={page.title}
-                subtitle={page.subTitle}
-                buttoname={page.buttonName}
-                setOpenMissionModal={setOpenMissionModal}
-              />
+      <TextParallaxContent
+        imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading={ourMission.title}
+        heading={ourMission.subtitle}
+      >
+        <OurMissionContent
+          content={ourMission.content}
+          title={ourMission.title}
+          subtitle={ourMission.subtitle}
+          buttoname={ourMission.buttonName}
+          setOpenMissionModal={setOpenMissionModal}
+        />
 
-              {openMissionModel && (
-                <ModalComponent
-                  title={ourMission.title}
-                  content={ourMission.content}
-                  subtitle={ourMission.subtitle}
-                  start={ourMission.start}
-                  onClose={() => setOpenMissionModal(false)}
-                />
-              )}
-            </TextParallaxContent>
-          )
-      )}
+        {openMissionModel && (
+          <ModalComponent
+            title={ourMission.title}
+            content={ourMission.content}
+            subtitle={ourMission.subtitle}
+            start={ourMission.start}
+            onClose={() => setOpenMissionModal(false)}
+          />
+        )}
+      </TextParallaxContent>
     </section>
   );
 };

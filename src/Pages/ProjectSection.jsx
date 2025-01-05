@@ -57,38 +57,26 @@ const ProjectSection = () => {
     },
   ];
 
-  const { pagesContent, loading } = useContext(pageContext);
-
-  if (loading) return <Loader />;
-
   return (
     <>
       <section
         id="project"
         className=" flex flex-col gap-3 items-center justify-center"
       >
-        {pagesContent?.map(
-          (page) =>
-            page.title === "Projects" && (
-              <div
-                key={page._id}
-                className="relative mx-auto max-w-5xl text-center"
-              >
-                <span className="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
-                  {page.title}
-                </span>
-                <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                  {page.subTitle}
-                </h2>
-                <p
-                  className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400"
-                  dangerouslySetInnerHTML={{
-                    __html: page.content,
-                  }}
-                ></p>
-              </div>
-            )
-        )}
+        <div className="relative mx-auto max-w-5xl text-center">
+          <span className="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
+            Projects
+          </span>
+          <h2 className="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+            Our website showcase
+          </h2>
+          <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
+            At our web development company, we specialize in creating tailored
+            websites and web applications that meet diverse client needs. Each
+            project is a collaborative effort that begins with understanding the
+            client's vision and requirements.
+          </p>
+        </div>
 
         {projectData.map((data) => (
           <ProjectCard

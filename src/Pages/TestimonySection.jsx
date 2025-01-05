@@ -3,37 +3,27 @@ import { pageContext } from "../Context/PageContext";
 import Loader from "../Components/Loader";
 
 const TestimonySection = () => {
-  const { pagesContent, loading } = useContext(pageContext);
-
-  if (loading) return <Loader />;
-
   return (
     <section id="testimony">
       <section id="testimonies" className="py-20 bg-black">
         <div className="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
           <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-            {pagesContent?.map(
-              (page) =>
-                page.title === "Words from Others" && (
-                  <div
-                    key={page._id}
-                    className="mb-12 space-y-5 md:mb-16 md:text-center"
-                  >
-                    <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
-                      {page.title}
-                    </div>
-                    <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-                      {page.subTitle}
-                    </h1>
-                    <p
-                      className="text-xl text-gray-100 md:text-center md:text-2xl"
-                      dangerouslySetInnerHTML={{
-                        __html: page.content,
-                      }}
-                    ></p>
-                  </div>
-                )
-            )}
+            <div className="mb-12 space-y-5 md:mb-16 md:text-center">
+              <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
+                Words from Others
+              </div>
+              <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+                We provide best for our customers
+              </h1>
+              <p className="text-xl text-gray-100 md:text-center md:text-2xl">
+                We believe in delivering the best possible solutions to our
+                clients' needs. Here are some testimonials from satisfied
+                customers.
+                <br />
+                <br />
+                <span className="font-semibold">Example Client: Jane Doe</span>
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">

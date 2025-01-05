@@ -5,9 +5,6 @@ import { pageContext } from "../Context/PageContext";
 import Loader from "../Components/Loader";
 
 const Herosection = () => {
-  const { pagesContent, loading } = useContext(pageContext);
-
-  if (loading) return <Loader />;
   return (
     <section
       id="hero"
@@ -33,106 +30,54 @@ const Herosection = () => {
           }}
           className=" p-2 rounded-full  text-xl bg-gray-900  hover:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600 hover:text-black"
         >
-          {pagesContent?.map(
-            (page) =>
-              page.title === "Accurate Software & Integrators " && page.subTitle
-          )}
+          Web Development and Designing
         </motion.div>
-
-        {/* <TextAnimations
-                  key={page.id}
-                  once={true}
-                  text={page.title}
-                  className=" text-center  font-bold text-5xl lg:text-6xl xl:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
-                /> */}
-
         <div className=" hidden md:flex">
-          {pagesContent?.map(
-            (page) =>
-              page.title === "Accurate Software & Integrators " && (
-                <motion.div
-                  initial={{
-                    opacity: 0,
-                  }}
-                  animate={{
-                    opacity: 1,
-                  }}
-                  transition={{
-                    type: "fade",
-                    stiffness: 100,
-                    damping: 10,
-                    delay: 0.3,
-                  }}
-                  key={page.id}
-                  className=" text-center  font-bold text-5xl lg:text-6xl xl:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
-                >
-                  {page.title}
-                </motion.div>
-              )
-          )}
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              type: "fade",
+              stiffness: 100,
+              damping: 10,
+              delay: 0.3,
+            }}
+            className=" text-center  font-bold text-5xl lg:text-6xl xl:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
+          >
+            Accurate Software & Integrators
+          </motion.div>
         </div>
 
         <div className=" md:hidden flex items-center justify-center flex-col">
-          {/* <TextAnimations
-            once={true}
-            text="ASI"
-            className=" text-6xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
-          /> */}
           <h1 className=" text-6xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent">
             ASI
           </h1>
           <h2>Accurate Software & Integrators</h2>
         </div>
 
-        {pagesContent?.map(
-          (page) =>
-            page.title === "Accurate Software & Integrators " && (
-              <motion.p
-                key={page.id}
-                dangerouslySetInnerHTML={{
-                  __html: page.content,
-                }}
-                className=" text-center text-[17px]"
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: 1,
-                }}
-                transition={{
-                  type: "fade",
-                  stiffness: 100,
-                  damping: 10,
-                  delay: 1,
-                }}
-              ></motion.p>
-            )
-        )}
-
-        {/* <motion.p
-          dangerouslySetInnerHTML={{
-            __html: pagesContent?.map((page) =>
-              page.title === "Accurate Software & Integrators "
-                ? page.content
-                : "gjhg"
-            ),
-          }}
+        <motion.p
           className=" text-center text-[17px]"
           initial={{
             opacity: 0,
-            scale: 0,
           }}
           animate={{
             opacity: 1,
-            scale: 1,
           }}
           transition={{
-            type: "spring",
+            type: "fade",
             stiffness: 100,
             damping: 10,
-            delay: 3.2,
+            delay: 1,
           }}
-        ></motion.p> */}
+        >
+          Your website is the center of your digital ecosystem; the experience
+          matters once a customer enters, just as much as the perception they
+          have of you before they walk through the door.
+        </motion.p>
       </div>
     </section>
   );
