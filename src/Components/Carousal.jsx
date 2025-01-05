@@ -19,12 +19,6 @@ export default function Carousal() {
       description:
         "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
       image: "/images/sujith.JPG",
-      socialMedia: {
-        facebook: "#",
-        instagram: "#",
-        whatsapp: "8838295978",
-        linkedin: "#",
-      },
     },
     {
       name: "Kaviarasan",
@@ -32,12 +26,6 @@ export default function Carousal() {
       description:
         "Hi, I'm Kaviarasan, I'm the designer for Accurate Software & Integrators. I create design in figma, wix and so.",
       image: "/images/kavi.jpg",
-      socialMedia: {
-        facebook: "#",
-        instagram: "#",
-        whatsapp: "#",
-        linkedin: "#",
-      },
     },
     {
       name: "Sumith",
@@ -45,12 +33,6 @@ export default function Carousal() {
       description:
         "Hi, this is Sumith Karthikaiselvan, Logo Designer and also social media team. We create social media and also create new design.",
       image: "/images/sumith.JPG",
-      socialMedia: {
-        facebook: "#",
-        instagram: "#",
-        whatsapp: "#",
-        linkedin: "#",
-      },
     },
     {
       name: "Rahul",
@@ -58,12 +40,6 @@ export default function Carousal() {
       description:
         "Hi, this is Rahul, I'm the social media team for our company. I handle all the social media stuffs.",
       image: "/images/rahul.JPG",
-      socialMedia: {
-        facebook: "#",
-        instagram: "#",
-        whatsapp: "#",
-        linkedin: "#",
-      },
     },
     {
       name: "Kannadhasan",
@@ -71,12 +47,6 @@ export default function Carousal() {
       description:
         "Hi, I am Kannadhasan. I'm a QA manual tester in Accurate software and intergators. I develop test plan and test cases for manual testing. Execute manual testing to identify software defects and report them to development team.",
       image: "/images/guru.jpg",
-      socialMedia: {
-        facebook: "#",
-        instagram: "#",
-        whatsapp: "#",
-        linkedin: "#",
-      },
     },
   ];
 
@@ -123,7 +93,7 @@ export default function Carousal() {
             className=" p-10 rounded-3xl bg-green  text-white bg-neutral-900 "
           >
             <div className="flex w-full h-[450px]  flex-col justify-center items-start space-y-5">
-              <div className="flex items-center justify-center  w-full">
+              <div className="flex items-center justify-start  w-full">
                 <img
                   className=" h-[200px]  bg-cover rounded-3xl"
                   alt={developer.username}

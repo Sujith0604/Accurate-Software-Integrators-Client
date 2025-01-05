@@ -367,7 +367,7 @@ export const AboutSection = () => {
     title: "Our Story",
     content:
       "At Accurate Software & Integrators, our journey began with a simple idea: to revolutionize the way businesses connect with their customers online. Founded in 2021 by Karthikaiselvan, we recognized the challenges that many companies faced in establishing a strong digital presence. Our mission was clear – to provide innovative web development solutions that empower businesses to thrive in the digital landscape.",
-    subtitle: "The Beginning",
+    subtitle: "How it was started",
     start:
       "Our story started in Coimbatore, where we saw firsthand the struggles of small and medium-sized enterprises in navigating the complexities of web development. With backgrounds in software engineering, design, marketing we set out to create a company that would bridge the gap between technical expertise and user-friendly design.",
     challenge:
@@ -380,7 +380,7 @@ export const AboutSection = () => {
 
     content:
       "To empower businesses of all sizes with cutting-edge web design and development solutions that foster growth and success, ensuring every client achieves their organizational goals through tailored strategies",
-    subtitle: "The Future",
+    subtitle: "What is our vision?",
     start:
       "Our vision is to be a global leader in web development, focused on constant innovation and exceptional service delivery that enhances our clients' online presence, We aim to create user-centered websites that not only meet but exceed client expectations, driving engagement and facilitating business growth through effective digital solutions",
     buttonName: "Learn More",
@@ -390,7 +390,7 @@ export const AboutSection = () => {
     title: "Our Mission",
     content:
       "To empower businesses by providing innovative web solutions that drive growth, enhance user engagement, and deliver measurable results through cutting-edge technology .Our mission is to deliver exceptional web development services that enable our clients to thrive in the digital landscape, ensuring every project reflects our commitment to quality and innovation",
-    subtitle: "The Future",
+    subtitle: "What is our mission?",
     start:
       "We strive to understand our clients' unique needs and deliver tailored web solutions that enhance their operational efficiency and market presence",
     buttonName: "Learn More",
@@ -408,7 +408,7 @@ export const AboutSection = () => {
         <OurStoryContent
           content={ourStory.content}
           title={ourStory.title}
-          subtitle={ourStory.subTitle}
+          subtitle={ourStory.subtitle}
           buttoname={ourMission.buttonName}
           setOpenSuccessModal={setOpenSuccessModal}
         />
@@ -546,7 +546,7 @@ const OverlayCopy = ({ subheading, heading }) => {
       className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
     >
       <p className="mb-2 text-center text-xl md:mb-4 ">{subheading}</p>
-      <p className="text-center text-4xl  md:text-7xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent ">
+      <p className="text-center text-4xl  md:text-6xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent ">
         {heading}
       </p>
     </motion.div>
@@ -563,12 +563,7 @@ const OurStoryContent = ({
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-xl font-bold md:col-span-4">{subtitle}</h2>
     <div className="col-span-1 md:col-span-8">
-      <p
-        className="mb-4 text-sm text-neutral-600 md:text-xl"
-        dangerouslySetInnerHTML={{
-          __html: content,
-        }}
-      ></p>
+      <p className="mb-4 text-sm text-neutral-600 md:text-xl">{content}</p>
 
       <button
         aria-label="open"
@@ -591,12 +586,7 @@ const OurVisionContent = ({
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-xl font-bold md:col-span-4">{subtitle}</h2>
     <div className="col-span-1 md:col-span-8">
-      <p
-        className="mb-4 text-sm text-neutral-600 md:text-xl"
-        dangerouslySetInnerHTML={{
-          __html: content,
-        }}
-      ></p>
+      <p className="mb-4 text-sm text-neutral-600 md:text-xl">{content}</p>
 
       <button
         aria-label="open"
@@ -621,12 +611,7 @@ const OurMissionContent = ({
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-xl font-bold md:col-span-4">{subtitle}</h2>
     <div className="col-span-1 md:col-span-8">
-      <p
-        className="mb-4 text-sm text-neutral-600 md:text-xl"
-        dangerouslySetInnerHTML={{
-          __html: content,
-        }}
-      ></p>
+      <p className="mb-4 text-sm text-neutral-600 md:text-xl">{content}</p>
 
       <button
         aria-label="open"

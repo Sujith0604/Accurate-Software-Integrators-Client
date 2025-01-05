@@ -167,23 +167,6 @@ const Card = ({ developer }) => {
           <p className="text-center   pt-3 font-normal text-sm">
             {developer.description}
           </p>
-          <div
-            className=" flex gap-5
-           items-center"
-          >
-            <a aria-label="facebook" target="_blank" href="#">
-              <FacebookRoundedIcon />
-            </a>
-            <a aria-label="instagram" target="_blank" href="#">
-              <InstagramIcon />
-            </a>
-            <a aria-label="mail" target="_blank" href="#">
-              <MailRoundedIcon />
-            </a>
-            <a aria-label="whatsapp" target="_blank" href="#">
-              <WhatsAppIcon />
-            </a>
-          </div>
         </div>
       </div>
 
