@@ -47,7 +47,7 @@ const Herosection = () => {
                   key={page.id}
                   once={true}
                   text={page.title}
-                  className=" text-2xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
+                  className=" text-center  font-bold text-5xl lg:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
                 />
               )
           )}

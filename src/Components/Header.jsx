@@ -13,7 +13,7 @@ const Header = () => {
 
   const NavComponent = () => {
     return (
-      <nav className=" h-[400px] w-[200px] flex md:hidden">
+      <nav className=" h-[400px] w-[200px] flex lg:hidden">
         <ul className=" flex flex-col gap-5 text-xl uppercase ">
           <li className=" hover:underline">
             <AnchorLink onClick={() => setOpen(!open)} href="#hero">
@@ -142,7 +142,7 @@ const Header = () => {
 
       {!open ? (
         <button
-          className="px-4 py-2 rounded-3xl md:hidden"
+          className="px-4 py-2 rounded-3xl lg:hidden"
           aria-label="open"
           onClick={() => setOpen(true)}
         >
@@ -159,7 +159,7 @@ const Header = () => {
           opacity: 1,
           transition: { duration: 0.7, type: "fade" },
         }}
-        className=" hidden md:flex"
+        className=" hidden lg:flex"
       >
         <ul className="flex gap-6 ">
           <li className=" hover:underline">
@@ -208,7 +208,7 @@ const Header = () => {
           opacity: 1,
           transition: { duration: 0.8, easing: "ease" },
         }}
-        className="  hidden md:flex gap-5"
+        className="  hidden lg:flex gap-5"
       >
         <a
           aria-label="facebook"
