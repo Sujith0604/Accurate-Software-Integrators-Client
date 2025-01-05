@@ -133,7 +133,12 @@ const Card = ({ title, key, image }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 ">
-        <img
+        <motion.img
+          initial={{ scale: 1 }}
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.2, type: "fade" },
+          }}
           className=" h-[200px] w-full bg-white rounded-3xl"
           src={image}
           alt={title}
