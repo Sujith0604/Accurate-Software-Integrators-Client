@@ -185,7 +185,7 @@ const ClipPathLinks = () => {
         />
         <LinkBox
           Icon={FaInstagram}
-          href="https://www.instagram.com/accurate_software_?igsh=MTNybHhiNHEwa28xOA=="
+          href="https://www.instagram.com/_accurate_software__/"
         />
         <LinkBox
           Icon={SiFacebook}

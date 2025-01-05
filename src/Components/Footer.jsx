@@ -88,9 +88,7 @@ const Footer = () => {
                 <li className=" hover:underline">
                   <AnchorLink href="#design"> Work process</AnchorLink>
                 </li>
-                <li className=" hover:underline">
-                  <AnchorLink href="#project">Projects</AnchorLink>
-                </li>
+
                 <li className=" hover:underline">
                   <AnchorLink href="#contact">Contact</AnchorLink>
                 </li>
@@ -108,7 +106,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 aria-label="instagram"
-                href="https://www.instagram.com/accurate_software_?igsh=MTNybHhiNHEwa28xOA=="
+                href="https://www.instagram.com/_accurate_software__/"
               >
                 <InstagramIcon />
               </a>
