@@ -27,18 +27,6 @@ const Pricing = () => {
            items-center"
         >
           <a
-            aria-label="facebook"
-            href="https://www.facebook.com/share/15VNuw4sKG/?mibextid=wwXIfr"
-          >
-            <FacebookRoundedIcon />
-          </a>
-          <a
-            aria-label="instagram"
-            href="https://www.instagram.com/accurate_software_/profilecard/?igsh=MWxraGF4NXI3NnFqYg=="
-          >
-            <InstagramIcon />
-          </a>
-          <a
             aria-label="mail"
             href="mailto:accuratesoftwareintegrators@gmail.com"
           >
