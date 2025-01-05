@@ -99,24 +99,28 @@ const Footer = () => {
 
             <div className="  flex gap-5">
               <a
+                target="_blank"
                 aria-label="facebook"
                 href="https://www.facebook.com/share/15VNuw4sKG/?mibextid=wwXIfr"
               >
                 <FacebookRoundedIcon />
               </a>
               <a
+                target="_blank"
                 aria-label="instagram"
                 href="https://www.instagram.com/accurate_software_/profilecard/?igsh=MWxraGF4NXI3NnFqYg=="
               >
                 <InstagramIcon />
               </a>
               <a
+                target="_blank"
                 aria-label="mail"
                 href="mailto:accuratesoftwareintegrators@gmail.com"
               >
                 <MailRoundedIcon />
               </a>
               <a
+                target="_blank"
                 aria-label="whatsapp"
                 href="whatsapp://send?text=Hello There!&phone=+918870895978"
               >

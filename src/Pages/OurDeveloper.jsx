@@ -66,14 +66,14 @@ const HorizontalScrollCarousel = () => {
   const developer = [
     {
       name: "Sujith Karthikaiselvan",
-      title: "Mernstack Developer",
+      title: "Web Application Developer",
       description:
         "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
       image: "/images/sujith.JPG",
       socialMedia: {
         facebook: "#",
         instagram: "#",
-        whatsapp: "#",
+        whatsapp: "8838295978",
         linkedin: "#",
       },
     },
@@ -183,16 +183,16 @@ const Card = ({ developer }) => {
             className=" flex gap-5
            items-center"
           >
-            <a aria-label="facebook" href="#">
+            <a aria-label="facebook" target="_blank" href="#">
               <FacebookRoundedIcon />
             </a>
-            <a aria-label="instagram" href="#">
+            <a aria-label="instagram" target="_blank" href="#">
               <InstagramIcon />
             </a>
-            <a aria-label="mail" href="#">
+            <a aria-label="mail" target="_blank" href="#">
               <MailRoundedIcon />
             </a>
-            <a aria-label="whatsapp" href="#">
+            <a aria-label="whatsapp" target="_blank" href="#">
               <WhatsAppIcon />
             </a>
           </div>
