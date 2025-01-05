@@ -366,7 +366,7 @@ export const AboutSection = () => {
   const ourStory = {
     title: "Our Story",
     content:
-      "At Accurate Software & Integrators, our journey began with a simple idea: to revolutionize the way businesses connect with their customers online. Founded in 2021 by Karthikaiselvan, we recognized the challenges that many companies faced in establishing a strong digital presence. Our mission was clear – to provide innovative web development solutions that empower businesses to thrive in the digital landscape.",
+      "At Accurate Software & Integrators, our journey began with a simple idea: to revolutionize the way businesses connect with their customers online. Founded in 2024 by Sujith Karthikaiselvan and team, we recognized the challenges that many companies faced in establishing a strong digital presence. Our mission was clear – to provide innovative web development solutions that empower businesses to thrive in the digital landscape.",
     subtitle: "How it was started",
     start:
       "Our story started in Coimbatore, where we saw firsthand the struggles of small and medium-sized enterprises in navigating the complexities of web development. With backgrounds in software engineering, design, marketing we set out to create a company that would bridge the gap between technical expertise and user-friendly design.",
