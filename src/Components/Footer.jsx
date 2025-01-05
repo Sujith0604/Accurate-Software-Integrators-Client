@@ -135,7 +135,7 @@ const Footer = () => {
             <p className="text-xs text-gray-500">
               &copy; 2024. Accurate Software & Integrators. All rights reserved.
             </p>
-
+            {/* 
             {openTermModal && (
               <ModalComponent
                 onClose={() => setOpenTermModal(false)}
@@ -245,7 +245,7 @@ Provide contact details for users to reach out with questions or concerns regard
                   Privacy Policy{" "}
                 </button>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
