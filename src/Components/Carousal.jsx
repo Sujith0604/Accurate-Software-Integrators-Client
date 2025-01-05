@@ -127,7 +127,7 @@ export default function Carousal() {
                 <img
                   className=" h-[200px]  bg-cover rounded-3xl"
                   alt={developer.username}
-                  src={`https://accurate-software-integrators-backend.onrender.com/${developer.image} `}
+                  src={developer.image}
                 />
               </div>
               <h1 className=" text-xl font-bold">{developer.name}</h1>

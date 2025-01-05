@@ -80,7 +80,7 @@ export default function TechCarousal() {
               <div className="flex items-center justify-center  w-full">
                 <img
                   className=" h-[200px]  bg-cover rounded-3xl"
-                  src={`https://accurate-software-integrators-backend.onrender.com/${tech.image} `}
+                  src={tech.image}
                   alt={tech.title}
                 />
               </div>
