@@ -11,7 +11,10 @@ const OurTechSection = () => {
   if (loading) return <Loader />;
 
   return (
-    <div id="skills" className=" flex flex-col gap-5">
+    <div
+      id="skills"
+      className=" flex flex-col gap-5 bg-[url('/images/TechImage.jpg')] bg-cover"
+    >
       {pagesContent?.map(
         (page) =>
           page.title === "What tech we use?" && (
@@ -65,8 +68,8 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-black">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+    <section ref={targetRef} className="relative h-[300vh] ">
+      <div className="sticky top-0 flex h-[400px] items-center overflow-hidden ">
         <motion.div style={{ x }} className="flex gap-4">
           {techContent?.map((tech) => {
             return (
