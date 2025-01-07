@@ -197,9 +197,9 @@ const ScheduleItem = ({ title, date, location }) => {
     >
       <div>
         <p className="mb-1.5 text-xl text-zinc-50">{title}</p>
-        <p className="text-sm uppercase text-zinc-500">{date}</p>
+        <p className="text-sm uppercase text-gray-300">{date}</p>
       </div>
-      <div className="flex items-center gap-1.5 text-end text-sm uppercase text-zinc-500">
+      <div className="flex items-center gap-1.5 text-end text-sm uppercase text-gray-300">
         <p>{location}</p>
         <FiMapPin />
       </div>

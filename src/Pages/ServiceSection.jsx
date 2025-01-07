@@ -29,7 +29,7 @@ const ServiceSection = () => {
               >
                 What We Offer
               </h2>
-              <p className=" text-gray-500">
+              <p className=" text-gray-300">
                 We specialize in creating responsive and user-friendly websites
                 tailored to your business objectives. This includes both static
                 and dynamic website development, ensuring that your site is
@@ -87,10 +87,10 @@ const ServiceSection = () => {
                 </svg>
               </motion.div>
               <div>
-                <h4 className="font-semibold text-xl text-white mb-3">
+                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
                   Refreshing Design
                 </h4>
-                <p className="text-body-color">
+                <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
                 </p>
@@ -148,10 +148,10 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl text-white mb-3">
+                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
                   Based on Tailwind CSS
                 </h4>
-                <p className="text-body-color">
+                <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
                 </p>
@@ -214,10 +214,10 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl text-white mb-3">
+                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
                   300+ Components
                 </h4>
-                <p className="text-body-color">
+                <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
                 </p>
@@ -280,10 +280,10 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl text-white mb-3">
+                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
                   Speed Optimized
                 </h4>
-                <p className="text-body-color">
+                <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
                 </p>
@@ -334,10 +334,10 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl text-white mb-3">
+                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
                   Fully Customizable
                 </h4>
-                <p className="text-body-color">
+                <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
                 </p>
@@ -392,10 +392,10 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl text-white mb-3">
+                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
                   Regular Updates
                 </h4>
-                <p className="text-body-color">
+                <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
                 </p>

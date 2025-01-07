@@ -7,6 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { motion } from "motion/react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -80,6 +81,13 @@ const Header = () => {
               href="https://www.facebook.com/share/15VNuw4sKG/?mibextid=wwXIfr"
             >
               <FacebookRoundedIcon />
+            </a>
+            <a
+              target="_blank"
+              aria-label="facebook"
+              href="https://www.linkedin.com/in/accurate-software-integrators-ab02b1344/"
+            >
+              <LinkedInIcon />
             </a>
             <a
               target="_blank"
@@ -165,7 +173,7 @@ const Header = () => {
         }}
         className=" hidden xl:flex"
       >
-        <ul className="flex gap-6 ">
+        <ul className="flex gap-6  text-gray-300">
           <li className=" hover:underline">
             <AnchorLink href="#hero">Home</AnchorLink>
           </li>
@@ -220,6 +228,13 @@ const Header = () => {
           href="https://www.facebook.com/share/15VNuw4sKG/?mibextid=wwXIfr"
         >
           <FacebookRoundedIcon />
+        </a>
+        <a
+          target="_blank"
+          aria-label="facebook"
+          href="https://www.linkedin.com/in/accurate-software-integrators-ab02b1344/"
+        >
+          <LinkedInIcon />
         </a>
         <a
           target="_blank"

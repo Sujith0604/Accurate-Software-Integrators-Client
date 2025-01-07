@@ -25,12 +25,12 @@ const Footer = () => {
               <div>
                 <AnchorLink href="#hero">
                   {" "}
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-2xl font-bold bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600  bg-clip-text">
                     Accurate Software & Integrators
                   </h2>
                 </AnchorLink>
 
-                <p className="mt-4 text-gray-500">
+                <p className="mt-4 text-gray-300">
                   Your website is the center of your digital ecosystem; the
                   experience matters once a customer enters, just as much as the
                   perception they have of you before they walk through the door.
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
 
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-500">Links</p>
+              <p className="font-medium text-gray-300">Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li className=" hover:underline">
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
 
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-500">Company</p>
+              <p className="font-medium text-gray-300">Company</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li className=" hover:underline">
@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
 
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-500">Helpful Links</p>
+              <p className="font-medium text-gray-300">Helpful Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li className=" hover:underline">
@@ -130,7 +130,7 @@ const Footer = () => {
 
         <div className="mt-8 border-t border-gray-100 pt-8">
           <div className="sm:flex sm:justify-between">
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-300">
               &copy; 2024. Accurate Software & Integrators. All rights reserved.
             </p>
             {/* 

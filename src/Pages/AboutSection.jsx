@@ -399,7 +399,7 @@ export const AboutSection = () => {
   /////////////////////////////////
 
   return (
-    <section id="about" className=" text-white">
+    <section id="about" className=" text-gray-300">
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading={ourStory.title}
@@ -563,12 +563,12 @@ const OurStoryContent = ({
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-xl font-bold md:col-span-4">{subtitle}</h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-sm text-neutral-600 md:text-xl">{content}</p>
+      <p className="mb-4 text-sm text-gray-300 md:text-[16px]">{content}</p>
 
       <button
         aria-label="open"
         onClick={() => setOpenSuccessModal(true)}
-        className="w-full rounded bg-neutral-900 px-9 py-4  text-white transition-colors hover:bg-neutral-700 md:w-fit"
+        className="w-full rounded bg-neutral-900 px-9 py-4  text-gray-300 transition-colors hover:bg-neutral-700 md:w-fit"
       >
         {buttoname} <FiArrowUpRight className="inline" />
       </button>
@@ -586,14 +586,14 @@ const OurVisionContent = ({
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-xl font-bold md:col-span-4">{subtitle}</h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-sm text-neutral-600 md:text-xl">{content}</p>
+      <p className="mb-4 text-sm text-gray-300 md:text-[16px]">{content}</p>
 
       <button
         aria-label="open"
         onClick={() => {
           setOpenVisionModal(true);
         }}
-        className="w-full rounded bg-neutral-900 px-9 py-4  text-white transition-colors hover:bg-neutral-700 md:w-fit"
+        className="w-full rounded bg-neutral-900 px-9 py-4  text-gray-300 transition-colors hover:bg-neutral-700 md:w-fit"
       >
         {buttoname} <FiArrowUpRight className="inline" />
       </button>
@@ -611,12 +611,12 @@ const OurMissionContent = ({
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-xl font-bold md:col-span-4">{subtitle}</h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-sm text-neutral-600 md:text-xl">{content}</p>
+      <p className="mb-4 text-sm text-gray-300 md:text-[16px]">{content}</p>
 
       <button
         aria-label="open"
         onClick={() => setOpenMissionModal(true)}
-        className="w-full rounded bg-neutral-900 px-9 py-4  text-white transition-colors hover:bg-neutral-700 md:w-fit"
+        className="w-full rounded bg-neutral-900 px-9 py-4  text-gray-300 transition-colors hover:bg-neutral-700 md:w-fit"
       >
         {buttoname} <FiArrowUpRight className="inline" />
       </button>

@@ -9,11 +9,11 @@ const OurTechSection = () => {
         <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text  text-transparent  font-bold text-center md:text-start">
           What tech we use?
         </h2>
-        <p className=" text-gray-500 text-center ">
+        <p className=" text-gray-300 text-center ">
           We use both frontend and backend tools
         </p>
 
-        <p className=" text-gray-500 text-center ">
+        <p className=" text-gray-300 text-center ">
           We develop simple, intuitive and responsive user interface that helps
           users get things done with less effort and time with those
           technologies.
@@ -22,20 +22,20 @@ const OurTechSection = () => {
 
       <div className=" hidden md:flex flex-col  ">
         <div className="flex h-48 items-center justify-center">
-          <span className="font-semibold uppercase text-neutral-500">
+          <span className="font-semibold uppercase text-gray-300">
             Scroll down
           </span>
         </div>
 
         <HorizontalScrollCarousel />
         <div className="flex h-48 items-center justify-center">
-          <span className="font-semibold uppercase text-neutral-500">
+          <span className="font-semibold uppercase text-gray-300">
             Scroll up
           </span>
         </div>
       </div>
 
-      <div className=" px-2 md:hidden bg-[url('/images/TechImage.jpg')] bg-cover">
+      <div className=" px-2 md:hidden bg-[url('/images/TechImage.jpg')] bg-cover ">
         <TechCarousal />
       </div>
     </div>
@@ -139,11 +139,11 @@ const Card = ({ title, key, image }) => {
             scale: 1.1,
             transition: { duration: 0.2, type: "fade" },
           }}
-          className=" h-[200px] w-full rounded-3xl"
+          className=" h-[150px] w-[200px] rounded-3xl"
           src={image}
           alt={title}
         />
-        <p className=" p-8 text-2xl  uppercase text-white ">{title}</p>
+        <p className=" p-8 text-2xl  uppercase text-gray-300 ">{title}</p>
       </div>
     </div>
   );

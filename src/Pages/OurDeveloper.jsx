@@ -13,14 +13,14 @@ const OurDeveloper = () => {
   return (
     <div id="developer" className=" flex flex-col gap-5">
       <div className=" flex flex-col gap-5  items-center w-full   h-full justify-center">
-        <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent  font-bold text-center md:text-start">
+        <h2 className=" md:text-5xl text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text  text-transparent  font-bold text-center md:text-start">
           BUILDING TEAM
         </h2>
-        <p className=" text-gray-500 text-center ">
+        <p className=" text-gray-300 text-center ">
           The Talented People Behind the Scenes of the Organization
         </p>
 
-        <p className=" text-gray-500 text-center ">
+        <p className=" text-gray-300 text-center ">
           Web developers are responsible for creating websites that meet user
           expectations in terms of aesthetics, functionality, and performance.
         </p>
@@ -28,14 +28,14 @@ const OurDeveloper = () => {
 
       <div className=" hidden md:flex flex-col ">
         <div className="flex h-48 items-center justify-center">
-          <span className="font-semibold uppercase text-neutral-500">
+          <span className="font-semibold uppercase text-gray-300">
             Scroll down
           </span>
         </div>
 
         <HorizontalScrollCarousel />
         <div className="flex h-48 items-center justify-center">
-          <span className="font-semibold uppercase text-neutral-500">
+          <span className="font-semibold uppercase text-gray-300">
             Scroll up
           </span>
         </div>
@@ -69,7 +69,7 @@ const HorizontalScrollCarousel = () => {
       name: "Kaviarasan",
       title: "UI/UX Designer",
       description:
-        "Hi, I'm Kaviarasan, I'm the designer for Accurate Software & Integrators. I create design in figma, wix and so.",
+        "Hi, I'm Kaviarasan, I'm the UI/UX designer for Accurate Software & Integrators. I create designs in Figma, Wix, and so on.",
       image: "/images/kavi.jpg",
       socialMedia: {
         facebook: "#",
@@ -82,7 +82,7 @@ const HorizontalScrollCarousel = () => {
       name: "Sumith",
       title: "Logo Designer",
       description:
-        "Hi, this is Sumith Karthikaiselvan, Logo Designer and also social media team. We create social media and also create new design.",
+        "Hi, this is Sumith Karthikaiselvan, Logo Designer and also the social media team. We create social media and also create new designs.",
       image: "/images/sumk.jpg",
       socialMedia: {
         facebook: "#",
@@ -95,7 +95,7 @@ const HorizontalScrollCarousel = () => {
       name: "Rahul",
       title: "Social Media Team",
       description:
-        "Hi, this is Rahul, I'm the social media team for our company. I handle all the social media stuffs.",
+        "Hi, this is Rahul, I'm on the social media team for Accurate Software & Integrators. I handle the social media, promotions, and digital marketing for ASI.",
       image: "/images/rahul.JPG",
       socialMedia: {
         facebook: "#",
@@ -126,7 +126,10 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-black">
+    <section
+      ref={targetRef}
+      className="relative h-[300vh] bg-[url('/images/bggg.jpg')] bg-center"
+    >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {developer?.map((developers) => {
@@ -159,8 +162,8 @@ const Card = ({ developer }) => {
           />
         </div>
 
-        <div className=" flex flex-col items-center gap-2 justify-center md:w-[600px] px-4">
-          <h1 className="font-bold text-3xl text-white text-center mb-1">
+        <div className=" flex flex-col items-center gap-2 justify-center md:w-[600px] px-4 text-gray-300">
+          <h1 className="font-bold text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text  text-transparent text-center mb-1">
             {developer.name}
           </h1>
           <p className="text-xl text-center">{developer.title}</p>

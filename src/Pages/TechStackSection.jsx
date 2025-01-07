@@ -28,12 +28,12 @@ const TechStackSection = () => {
               <h2 className=" md:text-5xl text-3xl font-bold text-center md:text-start">
                 {page.title}
               </h2>
-              <p className=" text-gray-500 text-center md:text-start">
+              <p className=" text-gray-300 text-center md:text-start">
                 {page.subTitle}
               </p>
 
               <p
-                className=" text-gray-500 text-center md:text-start"
+                className=" text-gray-300 text-center md:text-start"
                 dangerouslySetInnerHTML={{
                   __html: page.content,
                 }}

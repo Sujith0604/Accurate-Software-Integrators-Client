@@ -33,7 +33,7 @@ const Herosection = () => {
             damping: 10,
             delay: 1,
           }}
-          className=" p-2 rounded-full  text-xl bg-gray-900  hover:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600 hover:text-black"
+          className=" p-2 rounded-full text-gray-300  text-xl bg-gray-900  hover:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600 hover:text-black"
         >
           Web Development and Designing
         </motion.div>
@@ -65,7 +65,7 @@ const Herosection = () => {
         </div>
 
         <motion.p
-          className=" text-center text-[17px]"
+          className=" text-center text-gray-300 text-[17px]"
           initial={{
             opacity: 0,
           }}
