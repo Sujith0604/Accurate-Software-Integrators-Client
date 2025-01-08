@@ -11,12 +11,7 @@ const Herosection = () => {
       className=" text-white relative h-screen  flex flex-col gap-5 items-center justify-center "
     >
       <div className=" absolute w-[100%] h-[100%] top-0 left-0 bg-black bg-opacity-40 backdrop-blur-sm"></div>
-      <video
-        autoPlay
-        loop
-        muted
-        className=" w-[100%] h-[100%] object-cover hidden md:flex"
-      >
+      <video autoPlay loop muted className=" w-[100%] h-[100%] object-cover ">
         <source src="/images/bgvideo.mp4" type="video/mp4" />
       </video>
       <div className="flex flex-col gap-5 w-[100%] h-[100%] items-center justify-center absolute top-0">
@@ -58,14 +53,14 @@ const Herosection = () => {
         </div>
 
         <div className=" md:hidden flex items-center justify-center flex-col">
-          <h1 className=" text-6xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent">
+          <h1 className=" text-9xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent">
             ASI
           </h1>
           <h2>Accurate Software & Integrators</h2>
         </div>
 
         <motion.p
-          className=" text-center text-gray-300 text-[17px]"
+          className=" text-center text-sm text-gray-300 text-[17px] lg:w-[50%] px-2 md:px-0"
           initial={{
             opacity: 0,
           }}

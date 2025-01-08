@@ -151,35 +151,15 @@ const Schedule = () => {
       >
         Our Work phase
       </motion.h1>
-      <ScheduleItem
-        title="Consult your idea"
-        date="Phase - 1"
-        location="Coimbatore"
-      />
-      <ScheduleItem
-        title="Requirement Gathering"
-        date="Phase - 2"
-        location="Coimbatore"
-      />
-      <ScheduleItem
-        title="Choose a technology"
-        date="Phase - 3"
-        location="Coimbatore"
-      />
-      <ScheduleItem title="Design" date="Phase - 4" location="Coimbatore" />
-      <ScheduleItem
-        title="Developement"
-        date="Phase - 5"
-        location="Coimbatore"
-      />
-      <ScheduleItem title="Testing" date="Phase - 6" location="Coimbatore" />
+      <ScheduleItem title="Consult your idea" date="Phase - 1" />
+      <ScheduleItem title="Requirement Gathering" date="Phase - 2" />
+      <ScheduleItem title="Choose a technology" date="Phase - 3" />
+      <ScheduleItem title="Design" date="Phase - 4" />
+      <ScheduleItem title="Developement" date="Phase - 5" />
+      <ScheduleItem title="Testing" date="Phase - 6" />
 
-      <ScheduleItem title="Deploying " date="Phase - 7" location="Coimbatore" />
-      <ScheduleItem
-        title="Reach the market"
-        date="Phase - 8"
-        location="Coimbatore"
-      />
+      <ScheduleItem title="Deploying " date="Phase - 7" />
+      <ScheduleItem title="Reach the market" date="Phase - 8" />
     </section>
   );
 };
@@ -196,10 +176,10 @@ const ScheduleItem = ({ title, date, location }) => {
         <p className="mb-1.5 text-xl text-zinc-50">{title}</p>
         <p className="text-sm uppercase text-gray-300">{date}</p>
       </div>
-      <div className="flex items-center gap-1.5 text-end text-sm uppercase text-gray-300">
+      {/* <div className="flex items-center gap-1.5 text-end text-sm uppercase text-gray-300">
         <p>{location}</p>
         <FiMapPin />
-      </div>
+      </div> */}
     </motion.div>
   );
 };
