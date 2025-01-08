@@ -101,7 +101,7 @@ const HorizontalScrollCarousel = () => {
       description:
         "Hi, this is Rahul, I'm on the social media team for Accurate Software & Integrators. I handle the social media, promotions, and digital marketing for ASI.",
       // image: "/images/rahul.JPG",
-      image: "/images/RahulBg.jpg",
+      image: "/images/RBG.jpg",
       socialMedia: {
         facebook: "#",
         instagram: "#",
