@@ -55,6 +55,7 @@ const HorizontalScrollCarousel = () => {
     {
       name: "Sujith Karthikaiselvan",
       title: "Web Application Developer",
+      role: "Founder",
       description:
         "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
       image: "/images/sk.jpg",
@@ -68,6 +69,7 @@ const HorizontalScrollCarousel = () => {
     {
       name: "Kaviarasan",
       title: "UI/UX Designer",
+      role: "Co-Founder",
       description:
         "Hi, I'm Kaviarasan, I'm the UI/UX designer for Accurate Software & Integrators. I create designs in Figma, Wix, and so on.",
       image: "/images/kavi.jpg",
@@ -80,6 +82,7 @@ const HorizontalScrollCarousel = () => {
     },
     {
       name: "Sumith",
+      role: "",
       title: "Logo Designer",
       description:
         "Hi, this is Sumith Karthikaiselvan, Logo Designer and also the social media team. We create social media and also create new designs.",
@@ -94,9 +97,11 @@ const HorizontalScrollCarousel = () => {
     {
       name: "Rahul",
       title: "Social Media Team",
+      role: "",
       description:
         "Hi, this is Rahul, I'm on the social media team for Accurate Software & Integrators. I handle the social media, promotions, and digital marketing for ASI.",
-      image: "/images/rahul.JPG",
+      // image: "/images/rahul.JPG",
+      image: "/images/RahulBg.jpg",
       socialMedia: {
         facebook: "#",
         instagram: "#",
@@ -107,6 +112,7 @@ const HorizontalScrollCarousel = () => {
     {
       name: "Kannadhasan",
       title: "Q & A Team",
+      role: "",
       description:
         "Hi, I am Kannadhasan. I'm a QA manual tester in Accurate software and intergators. I develop test plan and test cases for manual testing. Execute manual testing to identify software defects and report them to development team.",
       image: "/images/guru.jpg",
@@ -166,6 +172,7 @@ const Card = ({ developer }) => {
           <h1 className="font-bold text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text  text-transparent text-center mb-1">
             {developer.name}
           </h1>
+          <p>{developer.role}</p>
           <p className="text-xl text-center">{developer.title}</p>
           <p className="text-center   pt-3 font-normal text-sm">
             {developer.description}
