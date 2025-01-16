@@ -15,6 +15,7 @@ export default function Carousal() {
   const developerContent = [
     {
       name: "Sujith Karthikaiselvan",
+      role: "Founder",
       title: "Web Application Developer",
       description:
         "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
@@ -22,6 +23,7 @@ export default function Carousal() {
     },
     {
       name: "Kaviarasan",
+      role: "Co-Founder",
       title: "UI/UX Designer",
       description:
         "Hi, I'm Kaviarasan, I'm the designer for Accurate Software & Integrators. I create design in figma, wix and so.",
@@ -29,6 +31,7 @@ export default function Carousal() {
     },
     {
       name: "Sumith",
+      role: "",
       title: "Logo Designer",
       description:
         "Hi, this is Sumith Karthikaiselvan, Logo Designer and also social media team. We create social media and also create new design.",
@@ -36,6 +39,8 @@ export default function Carousal() {
     },
     {
       name: "Rahul",
+      role: "",
+
       title: "Social Media Team",
       description:
         "Hi, this is Rahul, I'm the social media team for our company. I handle all the social media stuffs.",
@@ -43,6 +48,8 @@ export default function Carousal() {
     },
     {
       name: "Kannadhasan",
+      role: "",
+
       title: "Q & A Team",
       description:
         "Hi, I am Kannadhasan. I'm a QA manual tester in Accurate software and intergators. I develop test plan and test cases for manual testing. Execute manual testing to identify software defects and report them to development team.",
@@ -101,6 +108,7 @@ export default function Carousal() {
                 />
               </div>
               <h1 className=" text-2xl font-bold">{developer.name}</h1>
+              <p className=" text-gray-200">{developer.role}</p>
               <p className=" text-xl font-semibold">{developer.title}</p>
               <p className="text-gray-200">{developer.description}</p>
             </div>

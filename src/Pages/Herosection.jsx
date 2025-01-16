@@ -48,7 +48,7 @@ const Herosection = () => {
             }}
             className=" text-center  font-bold text-5xl lg:text-6xl xl:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent"
           >
-            Accurate Software & Integrators
+            Accurate Software Integrators
           </motion.div>
         </div>
 
@@ -56,7 +56,7 @@ const Herosection = () => {
           <h1 className=" text-9xl font-bold md:text-7xl md:h-[90px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-500 to-yellow-100  bg-clip-text text-transparent">
             ASI
           </h1>
-          <h2>Accurate Software & Integrators</h2>
+          <h2>Accurate Software Integrators</h2>
         </div>
 
         <motion.p
