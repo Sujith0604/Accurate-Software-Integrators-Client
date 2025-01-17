@@ -82,13 +82,13 @@ const Header = () => {
             >
               <FacebookRoundedIcon />
             </a>
-            <a
+            {/* <a
               target="_blank"
               aria-label="facebook"
               href="https://www.linkedin.com/in/accurate-software-integrators-ab02b1344/"
             >
               <LinkedInIcon />
-            </a>
+            </a> */}
             <a
               target="_blank"
               aria-label="instagram"
@@ -229,13 +229,13 @@ const Header = () => {
         >
           <FacebookRoundedIcon />
         </a>
-        <a
+        {/* <a
           target="_blank"
           aria-label="facebook"
           href="https://www.linkedin.com/in/accurate-software-integrators-ab02b1344/"
         >
           <LinkedInIcon />
-        </a>
+        </a> */}
         <a
           target="_blank"
           aria-label="instagram"

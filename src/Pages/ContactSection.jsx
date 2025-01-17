@@ -198,10 +198,10 @@ const ClipPathLinks = () => {
           href="https://x.com/webdev_2025?t=ntv7hLUTFN40QoSP0FCqNg&s=08"
         />
         <LinkBox Icon={IoIosCall} href="tel:8870895978" />
-        <LinkBox
+        {/* <LinkBox
           Icon={SiLinkedin}
           href="http://linkedin.com/in/accurate-software-integrators-ab02b1344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-        />
+        /> */}
       </div>
     </div>
   );
