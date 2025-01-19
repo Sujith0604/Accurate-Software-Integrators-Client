@@ -87,9 +87,9 @@ const ServiceSection = () => {
                 </svg>
               </motion.div>
               <div>
-                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
+                <h1 className="font-semibold text-xl  text-gray-300 mb-3">
                   Refreshing Design
-                </h4>
+                </h1>
                 <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
@@ -148,9 +148,9 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
+                <h1 className="font-semibold text-xl  text-gray-300 mb-3">
                   Based on Tailwind CSS
-                </h4>
+                </h1>
                 <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
@@ -214,9 +214,9 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
+                <h1 className="font-semibold text-xl  text-gray-300 mb-3">
                   300+ Components
-                </h4>
+                </h1>
                 <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
@@ -280,9 +280,9 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
+                <h1 className="font-semibold text-xl  text-gray-300 mb-3">
                   Speed Optimized
-                </h4>
+                </h1>
                 <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
@@ -334,9 +334,9 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
+                <h1 className="font-semibold text-xl  text-gray-300 mb-3">
                   Fully Customizable
-                </h4>
+                </h1>
                 <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.
@@ -392,9 +392,9 @@ const ServiceSection = () => {
               </motion.div>
 
               <div>
-                <h4 className="font-semibold text-xl  text-gray-300 mb-3">
+                <h1 className="font-semibold text-xl  text-gray-300 mb-3">
                   Regular Updates
-                </h4>
+                </h1>
                 <p className=" text-gray-300">
                   We dejoy working with discerning clients, people for whom
                   qualuty, service, integrity & aesthetics.

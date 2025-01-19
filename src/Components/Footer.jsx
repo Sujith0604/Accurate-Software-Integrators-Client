@@ -106,7 +106,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 aria-label="instagram"
-                href="https://www.instagram.com/_accurate_software__/"
+                href="https://www.instagram.com/accuratesoftwareintegrators?igsh=MWxraGF4NXI3NnFqYg%3D%3D&utm_source=qr"
               >
                 <InstagramIcon />
               </a>

@@ -15,7 +15,7 @@ export default function Carousal() {
   const developerContent = [
     {
       name: "Sujith Karthikaiselvan",
-      role: "Founder",
+      role: "Founder & CEO",
       title: "Web Application Developer",
       description:
         "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
@@ -31,7 +31,7 @@ export default function Carousal() {
     },
     {
       name: "Sumith",
-      role: "",
+      role: "Elite Member",
       title: "Logo Designer",
       description:
         "Hi, this is Sumith Karthikaiselvan, Logo Designer and also social media team. We create social media and also create new design.",
@@ -39,7 +39,7 @@ export default function Carousal() {
     },
     {
       name: "Rahul",
-      role: "",
+      role: "Elite Member",
 
       title: "Social Media Team",
       description:
@@ -48,7 +48,7 @@ export default function Carousal() {
     },
     {
       name: "Kannadhasan",
-      role: "",
+      role: "Elite Member",
 
       title: "Q & A Team",
       description:
@@ -99,18 +99,19 @@ export default function Carousal() {
             key={developer._id}
             className=" p-10 rounded-3xl bg-green  text-white bg-neutral-900 "
           >
-            <div className="flex w-full h-[550px] flex-col justify-center items-center space-y-5">
+            <div className="flex w-full h-[550px] flex-col justify-center border rounded-3xl items-center space-y-5">
               <div className="flex items-center justify-center  w-full">
                 <img
-                  className=" h-[300px]   bg-cover rounded-3xl"
-                  alt={developer.username}
+                  className=" h-[300px] w-auto bg-cover rounded-3xl"
+                  alt="team"
                   src={developer.image}
                 />
               </div>
               <h1 className=" text-2xl font-bold">{developer.name}</h1>
-              <p className=" text-gray-200">{developer.role}</p>
-              <p className=" text-xl font-semibold">{developer.title}</p>
-              <p className="text-gray-200">{developer.description}</p>
+              <h2 className=" text-xl font-semibold text-gray-200">
+                {developer.role}
+              </h2>
+              <p className=" ">{developer.title}</p>
             </div>
           </SwiperSlide>
         ))}

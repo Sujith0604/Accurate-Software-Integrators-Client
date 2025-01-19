@@ -55,7 +55,7 @@ const HorizontalScrollCarousel = () => {
     {
       name: "Sujith Karthikaiselvan",
       title: "Web Application Developer",
-      role: "Founder",
+      role: "Founder & CEO",
       description:
         "Hi, this is Sujith Karthikaiselvan. I'm a web application developer in Accurate Software & Integrators. My tech stacks are Reactjs, NextJs, Nodejs, MongoDB, and PostgreSQL. I also optimize websites for the production level.",
       image: "/images/sk.jpg",
@@ -82,7 +82,7 @@ const HorizontalScrollCarousel = () => {
     },
     {
       name: "Sumith",
-      role: "",
+      role: "Elite Member",
       title: "Logo Designer",
       description:
         "Hi, this is Sumith Karthikaiselvan, Logo Designer and also the social media team. We create social media and also create new designs.",
@@ -97,7 +97,7 @@ const HorizontalScrollCarousel = () => {
     {
       name: "Rahul",
       title: "Social Media Team",
-      role: "",
+      role: "Elite Member",
       description:
         "Hi, this is Rahul, I'm on the social media team for Accurate Software & Integrators. I handle the social media, promotions, and digital marketing for ASI.",
       // image: "/images/rahul.JPG",
@@ -112,7 +112,7 @@ const HorizontalScrollCarousel = () => {
     {
       name: "Kannadhasan",
       title: "Q & A Team",
-      role: "",
+      role: "Elite Member",
       description:
         "Hi, I am Kannadhasan. I'm a QA manual tester in Accurate software and intergators. I develop test plan and test cases for manual testing. Execute manual testing to identify software defects and report them to development team.",
       image: "/images/guru.jpg",
@@ -158,25 +158,23 @@ const Card = ({ developer }) => {
         <div className="md:h-[500px] h-[400px] md:w-[400px] ">
           <motion.img
             initial={{ scale: 1 }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ type: "linear" }}
             src={developer.image}
-            alt={developer.name}
+            alt="developer image"
             role="img"
             loading="lazy"
             className=" object-cover h-full w-full shadow-md rounded-3xl"
           />
         </div>
 
-        <div className=" flex flex-col items-center gap-2 justify-center md:w-[600px] px-4 text-gray-300">
-          <h1 className="font-bold text-3xl bg-gradient-to-b from-white to-gray-400 bg-clip-text  text-transparent text-center mb-1">
+        <div className=" flex flex-col gap-2 justify-center md:w-[600px] px-4 text-gray-300 border rounded-3xl">
+          <h1 className="font-bold text-4xl bg-gradient-to-b from-white to-gray-400 bg-clip-text  text-transparent  mb-1">
             {developer.name}
           </h1>
-          <p>{developer.role}</p>
-          <p className="text-xl text-center">{developer.title}</p>
-          <p className="text-center   pt-3 font-normal text-sm">
-            {developer.description}
-          </p>
+          <h2 className=" text-2xl font-semibold">{developer.role}</h2>
+          <p className=" text-xl">{developer.title}</p>
+          <p className=" pt-3 font-normal text-sm">{developer.description}</p>
         </div>
       </div>
 

@@ -123,7 +123,7 @@ const Card = ({ title, key, image }) => {
   return (
     <div
       key={key}
-      className="group relative h-[300px] w-[300px] overflow-hidden bg-neutral-900 rounded-3xl"
+      className="group relative h-[300px] border w-[300px] overflow-hidden bg-neutral-900 rounded-3xl"
     >
       <div
         style={{
@@ -139,9 +139,9 @@ const Card = ({ title, key, image }) => {
             scale: 1.1,
             transition: { duration: 0.2, type: "fade" },
           }}
-          className=" h-[150px] w-[200px] rounded-3xl"
+          className=" h-[150px] w-[250px]  rounded-3xl"
           src={image}
-          alt={title}
+          alt="tech"
         />
         <p className=" p-8 text-2xl  uppercase text-gray-300 ">{title}</p>
       </div>

@@ -106,12 +106,12 @@ export default function TechCarousal() {
             key={tech.id}
             className=" p-10 rounded-3xl bg-green  text-white bg-neutral-900 "
           >
-            <div className="flex w-full h-[300px]  flex-col justify-center items-center space-y-5">
+            <div className="flex w-full h-[300px] shadow-md  flex-col justify-center items-center space-y-5">
               <div className="flex items-center justify-center  w-full">
                 <img
-                  className=" h-[200px]  bg-cover rounded-3xl"
+                  className="  bg-cover h-[200px]  rounded-3xl"
                   src={tech.image}
-                  alt={tech.title}
+                  alt="tech"
                 />
               </div>
               <p className=" text-xl font-semibold">{tech.title}</p>

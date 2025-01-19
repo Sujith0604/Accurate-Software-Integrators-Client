@@ -31,24 +31,24 @@ const Pricing = () => {
     },
     {
       id: 4,
-      title: "Unique Design Website",
+      title: "Logo Design",
       content:
-        "We create unique designs for customers and also provide service for custom design. We always provide the website as per clients preferences. Having a unique design can help your business stand out.",
-      image: "/images/unique-website-design.png",
+        "We specialize in designing distinctive logos tailored to our clients' specific needs. Our services include the creation of custom logos that reflect the unique identity of each business. We prioritize client preferences throughout the design process, ensuring that the final product aligns with their vision.",
+      image: "/images/LogoWithBackground.jpg",
     },
     {
       id: 5,
-      title: "Animated Website",
+      title: "Poster Design",
       content:
-        " We create animated designs for customers to make their business look more amazing and attract clients online. Animation is one thing that is becoming more famous in website development.",
+        "We specialize in creating visually compelling poster designs that enhance our clients' business presence and attract potential customers online. Posters have become an increasingly popular tool for businesses to showcase their brand and elevate their online visibility.",
       image: "/images/animation.jpg",
     },
     {
       id: 6,
-      title: "Corporate Website",
+      title: "Social Media Handling",
       content:
-        "We also create complex websites for customers for corporate-related stuff. These websites are more complex websites where the data constantly changes and requires dynamic rendering.",
-      image: "/images/Corporate website.jpg",
+        "We offer comprehensive social media management services for clients with busy schedules. With our support, you can rest assured that all messages and inquiries will be promptly addressed, allowing you to focus on your core responsibilities while we handle your online presence.",
+      image: "/images/social media.jpg",
     },
   ];
 
@@ -100,7 +100,7 @@ const Pricing = () => {
               transition: { duration: 0.8, ease: "ease" },
             }}
             key={data.id}
-            className=" md:w-[350px] lg:w-[400px] h-[500px] border-neutral-800 bg-neutral-900/50 p-8 flex flex-col items-center justify-center gap-5"
+            className=" md:w-[350px] border lg:w-[400px] h-[500px] border-neutral-800 bg-neutral-900/50 p-8 flex flex-col items-center justify-center gap-5"
           >
             <div>
               <motion.img
@@ -109,7 +109,7 @@ const Pricing = () => {
                   scale: 1.1,
                   transition: { duration: 0.5 },
                 }}
-                className=" h-[200px] w-[300px] rounded-t-sm"
+                className=" h-[200px] bg-cover  rounded-t-sm"
                 alt={data.title}
                 src={data.image}
               />
